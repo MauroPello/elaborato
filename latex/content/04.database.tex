@@ -3,15 +3,15 @@
 sqlite3
 \subsection{Modello E/R}
 \begin{center}
-    \includegraphics[scale=0.28]{images/modello_e_r.png}
+    \includegraphics[scale=0.29]{images/modello_e_r.png}
 \end{center}
 \subsection{Modello logico}
 \begin{center}
     \begin{tabular}{ |l|c|l| } 
     \hline
-    \multicolumn{3}{|c|}{\textbf{Users}} \\
+    \multicolumn{3}{|c|}{\large\textbf{Users}} \\
     \hline
-    Nome Campo & Tipo & Note \\
+    \textbf{Nome Campo} & \textbf{Tipo} & \textbf{Note} \\
     \hline
     UserID & INTEGER & NOT NULL, PK \\
     Name & TEXT & NOT NULL \\
@@ -28,9 +28,9 @@ sqlite3
 \begin{center}
     \begin{tabular}{ |l|c|l| } 
     \hline
-    \multicolumn{3}{|c|}{\textbf{Products}} \\
+    \multicolumn{3}{|c|}{\large\textbf{Products}} \\
     \hline
-    Nome Campo & Tipo & Note \\
+    \textbf{Nome Campo} & \textbf{Tipo} & \textbf{Note} \\
     \hline
     ProductID & INTEGER & NOT NULL, PK \\
     Name & TEXT & NOT NULL \\
@@ -45,9 +45,9 @@ sqlite3
 \begin{center}
     \begin{tabular}{ |l|c|l| } 
     \hline
-    \multicolumn{3}{|c|}{\textbf{Transactions}} \\
+    \multicolumn{3}{|c|}{\large\textbf{Transactions}} \\
     \hline
-    Nome Campo & Tipo & Note \\
+    \textbf{Nome Campo} & \textbf{Tipo} & \textbf{Note} \\
     \hline
     TransactionID & INTEGER & NOT NULL, PK \\
     ProductID & INTEGER & NOT NULL, FK(Products) \\
