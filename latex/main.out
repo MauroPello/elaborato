@@ -1,0 +1,19 @@
+\BOOKMARK [1][-]{section.1}{Introduzione}{}% 1
+\BOOKMARK [1][-]{section.2}{Analisi dei requisiti}{}% 2
+\BOOKMARK [1][-]{section.3}{Analisi funzionale}{}% 3
+\BOOKMARK [1][-]{section.4}{Database}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{Descrizione}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Modello E/R}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Modello logico}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.4}{Entity Framework Core}{section.4}% 8
+\BOOKMARK [1][-]{section.5}{Infrastruttura IT}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Descrizione}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.2}{Apparati Utilizzati}{section.5}% 11
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Descrizione}{subsection.5.2}% 12
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Data server}{subsection.5.2}% 13
+\BOOKMARK [3][-]{subsubsection.5.2.3}{Application server}{subsection.5.2}% 14
+\BOOKMARK [3][-]{subsubsection.5.2.4}{Web server}{subsection.5.2}% 15
+\BOOKMARK [2][-]{subsection.5.3}{Progetto di rete}{section.5}% 16
+\BOOKMARK [1][-]{section.6}{Politiche di sicurezza}{}% 17
+\BOOKMARK [1][-]{section.7}{Bibliografia}{}% 18
+\BOOKMARK [1][-]{section.8}{Sitografia}{}% 19

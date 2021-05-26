@@ -1,0 +1,65 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{subfiles}
+\usepackage{graphicx}
+\usepackage{transparent}
+\usepackage{hyperref}
+\usepackage{subfigure}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    pdftitle={Rius.Co.: L'e-commerce per il RIUSo COllaborativo}
+}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \textbf{\Huge Rius.Co.}
+
+        \vspace{1cm}
+
+        {\LARGE L'e-commerce per il RIUSo COllaborativo}
+
+        \vfill
+
+        {\transparent{1}\includegraphics[scale=.42]{images/logo.png}}
+
+        \vfill
+
+        \textbf{\Large Mauro Pellonara}
+        
+        \vspace{1cm}
+        
+        {\large Elaborato di Informatica e Sistemi e Reti}
+        
+        \vspace{0.3cm}
+
+        {\large I.I.S. Volterra Elia}
+        
+        \vspace{0.3cm}
+        
+        {\large 31/05/2021}
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\subfile{content/01.introduzione.tex}
+\subfile{content/02.analisi-requisti.tex}
+\subfile{content/03.analisi-funzionale.tex}
+\subfile{content/04.database.tex}
+\subfile{content/05.infrastruttura.tex}
+\subfile{content/06.sicurezza.tex}
+\subfile{content/10.bibliografia.tex}
+\subfile{content/11.sitografia.tex}
+
+\end{document}
+% agenda 2030 (in inglese?)

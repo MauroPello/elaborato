@@ -1,0 +1,21 @@
+\babel@toc {italian}{}
+\babel@toc {italian}{}
+\contentsline {section}{\numberline {1}Introduzione}{2}{section.1}%
+\contentsline {section}{\numberline {2}Analisi dei requisiti}{4}{section.2}%
+\contentsline {section}{\numberline {3}Analisi funzionale}{4}{section.3}%
+\contentsline {section}{\numberline {4}Database}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Descrizione}{4}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Modello E/R}{5}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Modello logico}{5}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Entity Framework Core}{6}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Infrastruttura IT}{6}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Descrizione}{6}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Apparati Utilizzati}{6}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Descrizione}{6}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Data server}{6}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Application server}{6}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Web server}{6}{subsubsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.3}Progetto di rete}{6}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Politiche di sicurezza}{6}{section.6}%
+\contentsline {section}{\numberline {7}Bibliografia}{7}{section.7}%
+\contentsline {section}{\numberline {8}Sitografia}{7}{section.8}%
