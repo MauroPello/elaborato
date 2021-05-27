@@ -8,14 +8,14 @@
 \contentsline {subsection}{\numberline {4.2}Modello E/R}{5}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Modello logico}{5}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Entity Framework Core}{6}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Infrastruttura IT}{6}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Descrizione}{6}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Apparati Utilizzati}{6}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Descrizione}{6}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Data server}{6}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Application server}{6}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Web server}{6}{subsubsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.3}Progetto di rete}{6}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Politiche di sicurezza}{6}{section.6}%
-\contentsline {section}{\numberline {7}Bibliografia}{7}{section.7}%
-\contentsline {section}{\numberline {8}Sitografia}{7}{section.8}%
+\contentsline {section}{\numberline {5}Infrastruttura IT}{7}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Descrizione}{7}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Apparati Utilizzati}{7}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Descrizione}{7}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Data server}{7}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Application server}{7}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Web server}{7}{subsubsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.3}Progetto di rete}{7}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Politiche di sicurezza}{7}{section.6}%
+\contentsline {section}{\numberline {7}Bibliografia}{8}{section.7}%
+\contentsline {section}{\numberline {8}Sitografia}{8}{section.8}%
