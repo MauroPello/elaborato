@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.27)  27 MAY 2021 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.5.27)  28 MAY 2021 10:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -188,53 +188,63 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip54
 \subfig@bottom=\skip55
+) (/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 17.
+\c@r@tfl@t=\count196
+\rotFPtop=\skip56
+\rotFPbot=\skip57
+\rot@float@box=\box45
+\rot@mess@toks=\toks17
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 18.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count196
-\l__pdf_internal_box=\box45
+\l__kernel_color_stack_int=\count197
+\l__pdf_internal_box=\box46
 ) (/home/pello/Downloads/elaborato/latex/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Info: Redefining \it@ocap on input line 19.
-LaTeX Info: Redefining \it@ccap on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Info: Redefining \it@ocap on input line 20.
+LaTeX Info: Redefining \it@ccap on input line 20.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count197
+\scratchcounter=\count198
 \scratchdimen=\dimen144
-\scratchbox=\box46
-\nofMPsegments=\count198
-\nofMParguments=\count199
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count266
+\scratchbox=\box47
+\nofMPsegments=\count199
+\nofMParguments=\count266
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count267
 \MPscratchDim=\dimen145
-\MPnumerator=\count267
-\makeMPintoPDFobject=\count268
-\everyMPtoPDFconversion=\toks18
+\MPnumerator=\count268
+\makeMPintoPDFobject=\count269
+\everyMPtoPDFconversion=\toks19
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\AtBeginShipoutBox=\box47
+\AtBeginShipoutBox=\box48
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -242,7 +252,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 19.
+Package hyperref Info: Link coloring ON on input line 20.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -250,19 +260,19 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count269
+\c@section@level=\count270
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
  (/home/pello/Downloads/elaborato/latex/main.out) (/home/pello/Downloads/elaborato/latex/main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-<images/logo.png, id=80, 722.4591pt x 503.9628pt>
+<images/logo.png, id=84, 722.4591pt x 503.9628pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 32.
+Package pdftex.def Info: images/logo.png  used on input line 33.
 (pdftex.def)             Requested size: 303.43076pt x 211.66293pt.
  [1
 
@@ -280,68 +290,67 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.53 \newpage
+l.54 \newpage
               [1] (/home/pello/Downloads/elaborato/latex/content/01.introduzione.tex
-<images/riusco.png, id=117, 3023.00122pt x 916.59512pt>
+<images/riusco.png, id=122, 3023.00122pt x 916.59512pt>
 File: images/riusco.png Graphic file (type png)
 <use images/riusco.png>
 Package pdftex.def Info: images/riusco.png  used on input line 11.
 (pdftex.def)             Requested size: 226.7153pt x 68.74167pt.
-<images/green_coin.png, id=118, 973.6375pt x 972.63374pt>
+<images/green_coin.png, id=123, 973.6375pt x 972.63374pt>
 File: images/green_coin.png Graphic file (type png)
 <use images/green_coin.png>
 Package pdftex.def Info: images/green_coin.png  used on input line 13.
 (pdftex.def)             Requested size: 73.01965pt x 72.94438pt.
  [2 </home/pello/Downloads/elaborato/latex/images/riusco.png> </home/pello/Downloads/elaborato/latex/images/green_coin.png>]
-<images/agenda_2030.png, id=128, 2965.71402pt x 941.27269pt>
+<images/agenda_2030.png, id=133, 2965.71402pt x 941.27269pt>
 File: images/agenda_2030.png Graphic file (type png)
 <use images/agenda_2030.png>
 Package pdftex.def Info: images/agenda_2030.png  used on input line 30.
 (pdftex.def)             Requested size: 326.22955pt x 103.54031pt.
  [3
 
- </home/pello/Downloads/elaborato/latex/images/agenda_2030.png (PNG copy)>]) (/home/pello/Downloads/elaborato/latex/content/02.analisi-requisti.tex) (/home/pello/Downloads/elaborato/latex/content/03.analisi-funzionale.tex) (/home/pello/Downloads/elaborato/latex/content/04.database.tex
-<images/modello_e_r.png, id=134, 1307.91074pt x 958.01817pt>
+ </home/pello/Downloads/elaborato/latex/images/agenda_2030.png (PNG copy)>]) (/home/pello/Downloads/elaborato/latex/content/02.analisi-requisti.tex [4
+
+]) (/home/pello/Downloads/elaborato/latex/content/03.analisi-funzionale.tex) (/home/pello/Downloads/elaborato/latex/content/04.database.tex
+<images/modello_e_r.png, id=144, 1307.91074pt x 958.01817pt>
 File: images/modello_e_r.png Graphic file (type png)
 <use images/modello_e_r.png>
 Package pdftex.def Info: images/modello_e_r.png  used on input line 6.
 (pdftex.def)             Requested size: 379.2844pt x 277.81816pt.
- [4
-
-] [5 </home/pello/Downloads/elaborato/latex/images/modello_e_r.png>]) (/home/pello/Downloads/elaborato/latex/content/05.infrastruttura.tex
-<images/rete.png, id=145, 1143.52219pt x 759.58781pt>
+ [5] [6 </home/pello/Downloads/elaborato/latex/images/modello_e_r.png>]) (/home/pello/Downloads/elaborato/latex/content/05.infrastruttura.tex [7]
+<images/rete.png, id=161, 1132.23pt x 738.50906pt>
 File: images/rete.png Graphic file (type png)
 <use images/rete.png>
-Package pdftex.def Info: images/rete.png  used on input line 10.
-(pdftex.def)             Requested size: 457.40077pt x 303.82974pt.
+Package pdftex.def Info: images/rete.png  used on input line 12.
+(pdftex.def)             Requested size: 566.11362pt x 369.25363pt.
+ [8
 
-Overfull \hbox (67.40077pt too wide) in paragraph at lines 10--11
- [] 
- []
+] [9 </home/pello/Downloads/elaborato/latex/images/rete.png (PNG copy)>]) (/home/pello/Downloads/elaborato/latex/content/06.sicurezza.tex) (/home/pello/Downloads/elaborato/latex/content/10.bibliografia.tex) (/home/pello/Downloads/elaborato/latex/content/11.sitografia.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
+ [10
 
-[6]) (/home/pello/Downloads/elaborato/latex/content/06.sicurezza.tex) (/home/pello/Downloads/elaborato/latex/content/10.bibliografia.tex [7 </home/pello/Downloads/elaborato/latex/images/rete.png (PNG copy)>]) (/home/pello/Downloads/elaborato/latex/content/11.sitografia.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 64.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
  (/home/pello/Downloads/elaborato/latex/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2E5763698C69252A857B8A9F7A132CDF;1142.
+(rerunfilecheck)             Checksum: B7E5A4611864451874EB1E18D0ECB26C;1212.
  ) 
 Here is how much of TeX's memory you used:
- 6751 strings out of 482593
- 102124 string characters out of 5949629
- 371096 words of memory out of 5000000
- 21611 multiletter control sequences out of 15000+600000
+ 6865 strings out of 482593
+ 103578 string characters out of 5949629
+ 372980 words of memory out of 5000000
+ 21716 multiletter control sequences out of 15000+600000
  542348 words of font info for 43 fonts, out of 8000000 for 9000
  350 hyphenation exceptions out of 8191
- 34i,8n,38p,1173b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,9n,38p,1173b,459s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/pello/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk> </home/pello/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk> </home/pello/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1000.600pk> </home/pello/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/pello/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.600pk> </home/pello/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1440.600pk> </home/pello/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.600pk> </home/pello/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm2074.600pk> </home/pello/.texlive2019/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488.600pk>
-Output written on /home/pello/Downloads/elaborato/latex/main.pdf (9 pages, 2111703 bytes).
+Output written on /home/pello/Downloads/elaborato/latex/main.pdf (11 pages, 2117538 bytes).
 PDF statistics:
- 461 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 183 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 480 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 

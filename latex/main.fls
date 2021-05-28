@@ -93,6 +93,10 @@ INPUT /usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT /usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 INPUT /home/pello/Downloads/elaborato/latex/main.aux
