@@ -2,12 +2,13 @@
 \subsection{Descrizione}
 sqlite3
 \subsection{Modello E/R}
-\begin{center}
-    \includegraphics[scale=0.29]{images/modello_e_r.png}
-\end{center}
+\begin{figure}[ht]
+    \centering\includegraphics[scale=0.29]{images/modello_e_r.png}
+    \caption{Modello E/R del database}
+\end{figure}
 \subsection{Modello logico}
-\begin{center}
-    \begin{tabular}{ |l|c|l| } 
+\begin{figure}[ht]
+    \centering\begin{tabular}{ |l|c|l| } 
     \hline
     \multicolumn{3}{|c|}{\large\textbf{Users}} \\
     \hline
@@ -24,9 +25,10 @@ sqlite3
     Balance & INTEGER & NOT NULL \\
     \hline
     \end{tabular}
-\end{center}
-\begin{center}
-    \begin{tabular}{ |l|c|l| } 
+    \caption{Tabella Users parte del modello logico del database}
+\end{figure}
+\begin{figure}[ht]
+    \centering\begin{tabular}{ |l|c|l| } 
     \hline
     \multicolumn{3}{|c|}{\large\textbf{Products}} \\
     \hline
@@ -41,9 +43,10 @@ sqlite3
     OwnerID & INTEGER & NOT NULL, FK(Users) \\
     \hline
     \end{tabular}
-\end{center}
-\begin{center}
-    \begin{tabular}{ |l|c|l| } 
+    \caption{Tabella Products parte del modello logico del database}
+\end{figure}
+\begin{figure}[ht]
+    \centering\begin{tabular}{ |l|c|l| } 
     \hline
     \multicolumn{3}{|c|}{\large\textbf{Transactions}} \\
     \hline
@@ -57,7 +60,8 @@ sqlite3
     LastUpdate & TEXT & NOT NULL \\
     \hline
     \end{tabular}
-\end{center}
+    \caption{Tabella Transactions parte del modello logico del database}
+\end{figure}
 \subsection{Entity Framework Core}
 db schema generato code-first
 code snippets
