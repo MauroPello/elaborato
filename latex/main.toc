@@ -2,20 +2,20 @@
 \babel@toc {italian}{}
 \contentsline {section}{\numberline {1}Introduzione}{2}{section.1}%
 \contentsline {section}{\numberline {2}Analisi dei requisiti}{4}{section.2}%
-\contentsline {section}{\numberline {3}Analisi funzionale}{5}{section.3}%
-\contentsline {section}{\numberline {4}Database}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Descrizione}{5}{subsection.4.1}%
+\contentsline {section}{\numberline {3}Analisi funzionale}{6}{section.3}%
+\contentsline {section}{\numberline {4}Database}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Descrizione}{6}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Modello E/R}{6}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Modello logico}{6}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Modello logico}{7}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Entity Framework Core}{7}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Infrastruttura IT}{7}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Descrizione}{7}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Apparati Utilizzati}{7}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Descrizione}{7}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Data server}{7}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Application server}{7}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}API server}{7}{subsubsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.5}Web server}{7}{subsubsection.5.2.5}%
+\contentsline {section}{\numberline {5}Infrastruttura IT}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Descrizione}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Apparati Utilizzati}{8}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Descrizione}{8}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Data server}{8}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}Application server}{8}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}API server}{8}{subsubsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.5}Web server}{8}{subsubsection.5.2.5}%
 \contentsline {subsection}{\numberline {5.3}Progetto di rete}{8}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Politiche di sicurezza}{10}{section.6}%
-\contentsline {section}{Riferimenti bibliografici}{10}{section*.2}%
+\contentsline {section}{\numberline {6}Politiche di sicurezza}{8}{section.6}%
+\contentsline {section}{Riferimenti bibliografici}{8}{section*.2}%
