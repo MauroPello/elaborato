@@ -9,11 +9,14 @@
 \usepackage{hyperref}
 \usepackage{subfigure}
 \usepackage{rotating}
+\usepackage[nottoc]{tocbibind}
+\usepackage{url}
 
 \hypersetup{
     colorlinks=true,
     linkcolor=black,
     urlcolor=blue,
+    citecolor=blue,
     pdftitle={Rius.Co.: L'e-commerce per il RIUSo COllaborativo}
 }
 
@@ -59,7 +62,8 @@
 \subfile{content/04.database.tex}
 \subfile{content/05.infrastruttura.tex}
 \subfile{content/06.sicurezza.tex}
-\subfile{content/10.bibliografia.tex}
-\subfile{content/11.sitografia.tex}
+
+\bibliographystyle{plainurl.bst}
+\bibliography{content/bibliography.bib}
 
 \end{document}

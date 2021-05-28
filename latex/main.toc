@@ -18,5 +18,4 @@
 \contentsline {subsubsection}{\numberline {5.2.5}Web server}{7}{subsubsection.5.2.5}%
 \contentsline {subsection}{\numberline {5.3}Progetto di rete}{8}{subsection.5.3}%
 \contentsline {section}{\numberline {6}Politiche di sicurezza}{10}{section.6}%
-\contentsline {section}{\numberline {7}Bibliografia}{10}{section.7}%
-\contentsline {section}{\numberline {8}Sitografia}{10}{section.8}%
+\contentsline {section}{Riferimenti bibliografici}{10}{section*.2}%
