@@ -1,6 +1,15 @@
 \section{Database}
 \subsection{Descrizione}
-Per il database ho scelto SQLite3 come DBMS in quanto è uno dei migliori per la creazione e gestione di database leggeri e compatti. Per garantire la semplicità di gestione e la velocità di esecuzione delle query nel database sono presenti solo 3 tabelle: Users, Products e Transactions. Queste sono il minimo indispensabile per la creazione di un e-commerce. Il database sarà collocato nel database server che conterrà anche le immagini di profilo degli utenti e quelle legate ai prodotti. Quella riportata nel modello E/R è la prima versione del database che permette di caricare un'unica immagine per prodotto, nelle versioni successive verranno fatti aggiornamenti graduali paralleli allo sviluppo del sito web. 
+Per garantire la semplicità di gestione e la velocità di esecuzione delle query nel database sono presenti solo 3 tabelle: Users, Products e Transactions. Queste sono il minimo indispensabile per la creazione di un e-commerce funzionante. Il database sarà collocato nel data server che conterrà anche le immagini di profilo degli utenti e quelle legate ai prodotti. Quella riportata nel modello E/R è la prima versione del database che permette di caricare un'unica immagine per prodotto, nelle versioni successive verranno introdotti aggiornamenti graduali paralleli allo sviluppo completo del sito web. 
+\medskip
+
+La tabella Users contiene le informazioni base necessarie per l'utilizzo della piattaforma: ID utente, nome utente, password, email identificativa, città di residenza, immagine di profilo, salt per la generazione dell'hash della password, api key per eseguire richieste tramite l'API e quantità di green coin posseduti. 
+\medskip
+
+La tabella Products contiene invece i seguenti campi: ID prodotto, nome prodotto, descrizione prodotto, immagine del prodotto, disponibilità (per tenere traccia dei prodotti anche dopo la loro vendita o la rimozione dal mercato), data dell'ultimo aggiornamento apportato al prodotto e ID utente proprietario dell'oggetto. 
+\medskip
+
+La tabella Transactions contiene le transazioni effettuate tra gli utenti e ha i seguenti campi: ID transazione, ID prodotto scambiato, ID utente proprietario dell'oggetto al momento dello scambio (campo necessario per tenere traccia dei cambi di proprietà e degli scambi anche dopo che questi si siano conclusi), ID utente acquirente, stato della transazione (può essere "In Corso", "Completata Con Successo" o "Completata Senza Successo") e data dell'ultimo aggiornamento relativo alla transazione.  
 \subsection{Modello E/R}
 \begin{figure}[ht]
     \centering\includegraphics[scale=0.29]{images/modello_e_r.png}
@@ -14,7 +23,7 @@ Per il database ho scelto SQLite3 come DBMS in quanto è uno dei migliori per la
     \hline
     \textbf{Nome Campo} & \textbf{Tipo} & \textbf{Note} \\
     \hline
-    UserID & INTEGER & NOT NULL, PK \\
+    UserID & INTEGER & NOT NULL, PK, AUTOINCREMENT \\
     Name & TEXT & NOT NULL \\
     Password & TEXT & NOT NULL \\
     Email & TEXT & NOT NULL \\
@@ -34,7 +43,7 @@ Per il database ho scelto SQLite3 come DBMS in quanto è uno dei migliori per la
     \hline
     \textbf{Nome Campo} & \textbf{Tipo} & \textbf{Note} \\
     \hline
-    ProductID & INTEGER & NOT NULL, PK \\
+    ProductID & INTEGER & NOT NULL, PK, AUTOINCREMENT \\
     Name & TEXT & NOT NULL \\
     Description & TEXT & NOT NULL \\
     Image & TEXT & NOT NULL \\
@@ -52,7 +61,7 @@ Per il database ho scelto SQLite3 come DBMS in quanto è uno dei migliori per la
     \hline
     \textbf{Nome Campo} & \textbf{Tipo} & \textbf{Note} \\
     \hline
-    TransactionID & INTEGER & NOT NULL, PK \\
+    TransactionID & INTEGER & NOT NULL, PK, AUTOINCREMENT \\
     ProductID & INTEGER & NOT NULL, FK(Products) \\
     OwnerID & INTEGER & NOT NULL, FK(Users) \\
     BuyerID & INTEGER & NOT NULL, FK(Users) \\
@@ -62,6 +71,22 @@ Per il database ho scelto SQLite3 come DBMS in quanto è uno dei migliori per la
     \end{tabular}
     \caption{Tabella Transactions parte del modello logico del database}
 \end{figure}
+\clearpage
 \subsection{Entity Framework Core}
-db schema generato code-first
-code snippets
+Il database è stato generato automaticamente da Entity Framework Core a partire dai modelli scritti in C\# e inseriti nel progetto (generazione code-first). I modelli inseriti devono essere riportati nel DbContext indicato nel file Startup.cs, il database context si occupa quindi di descrive il database e le tabelle che lo compongono, quest'ultime vengono invece descritte dai modelli indicati nel database context. La nomenclatura dei modelli comprende l'espressione DTO (Data Transfer Object) in quanto queste classi vengono usate per il trasferimento di dati dagli utenti al database. 
+\bigskip
+
+\textbf{MainDbContext.cs}
+\lstinputlisting{content/code/MainDbContext.cs}
+\bigskip
+
+\textbf{UserDTO.cs}
+\lstinputlisting{content/code/UserDTO.cs}
+\bigskip
+
+\textbf{ProductDTO.cs}
+\lstinputlisting{content/code/ProductDTO.cs}
+\bigskip
+
+\textbf{TransactionDTO.cs}
+\lstinputlisting{content/code/TransactionDTO.cs}

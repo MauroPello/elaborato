@@ -11,7 +11,23 @@
 \usepackage{rotating}
 \usepackage[nottoc]{tocbibind}
 \usepackage{url}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{lipsum}
+\definecolor{lightgrey}{RGB}{245, 245, 245}
 
+\lstdefinestyle{csharp}{
+    language=[Sharp]C,
+    columns=flexible,
+    breaklines=true,
+    breakatwhitespace=true,
+    backgroundcolor=\color{lightgrey},
+    commentstyle=\color{green},
+    keywordstyle=\color{blue}\bfseries,
+    stringstyle=\color{red},
+    basicstyle=\ttfamily
+}
+\lstset{style=csharp}
 \bibliographystyle{plainurl.bst}
 \hypersetup{
     colorlinks=true,
