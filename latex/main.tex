@@ -13,7 +13,6 @@
 \usepackage{url}
 \usepackage{listings}
 \usepackage{color}
-\usepackage{lipsum}
 \definecolor{lightgrey}{RGB}{245, 245, 245}
 \definecolor{deepgreen}{RGB}{0, 180, 0}
 
@@ -28,7 +27,14 @@
     stringstyle=\color{red},
     basicstyle=\ttfamily
 }
-\lstset{style=csharp}
+\lstdefinestyle{dos}{
+    language=bash,
+    backgroundcolor=\color{black},
+    breaklines=true,
+    breakatwhitespace=true,
+    columns=flexible,
+    basicstyle=\small\color{white}\ttfamily
+}
 \bibliographystyle{plainurl.bst}
 \hypersetup{
     colorlinks=true,
@@ -83,3 +89,4 @@
 \bibliography{content/main.bib}
 
 \end{document}
+% bib appearance order

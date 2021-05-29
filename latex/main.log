@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.20)  29 MAY 2021 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.5.20)  30 MAY 2021 01:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -233,41 +233,31 @@ Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
-) (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/share/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2020-12-03 L3 programming layer (loader) 
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 45.
  (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count280
 \l__pdf_internal_box=\box50
-)) (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2020-10-27 L3 Experimental document command parser
- (/usr/share/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
-Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
- (/usr/share/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
-File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-)) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-Package hyperref Info: Option `colorlinks' set `true' on input line 39.
- (/home/pello/OneDrive/5° AI/elaborato/latex/main.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Info: Redefining \it@ocap on input line 41.
-LaTeX Info: Redefining \it@ccap on input line 41.
+) (/home/pello/OneDrive/5° AI/elaborato/latex/main.aux)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Info: Redefining \it@ocap on input line 47.
+LaTeX Info: Redefining \it@ccap on input line 47.
  (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count281
@@ -287,7 +277,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 41.
+Package hyperref Info: Link coloring ON on input line 47.
  (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texmf-dist/tex/latex/refcount/refcount.sty
@@ -297,16 +287,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count287
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
  (/home/pello/OneDrive/5° AI/elaborato/latex/main.out) (/home/pello/OneDrive/5° AI/elaborato/latex/main.out)
 \@outlinefile=\write3
 \c@lstlisting=\count288
 <images/logo.png, id=96, 722.4591pt x 503.9628pt>
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
-Package pdftex.def Info: images/logo.png  used on input line 54.
+Package pdftex.def Info: images/logo.png  used on input line 60.
 (pdftex.def)             Requested size: 303.43076pt x 211.66293pt.
  [1
 
@@ -322,7 +312,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.75 \newpage
+l.81 \newpage
               [1] (/home/pello/OneDrive/5° AI/elaborato/latex/content/01.introduzione.tex
 File: images/logo.png Graphic file (type png)
 <use images/logo.png>
@@ -364,13 +354,15 @@ Package pdftex.def Info: images/TRANSAZIONI.png  used on input line 11.
 (pdftex.def)             Requested size: 119.5771pt x 212.3239pt.
  [4
 
- </home/pello/OneDrive/5° AI/elaborato/latex/images/ACQUISTA.png> </home/pello/OneDrive/5° AI/elaborato/latex/images/OFFRI.png> </home/pello/OneDrive/5° AI/elaborato/latex/images/TRANSAZIONI.png>]) (/home/pello/OneDrive/5° AI/elaborato/latex/content/03.analisi-funzionale.tex [5]) (/home/pello/OneDrive/5° AI/elaborato/latex/content/04.database.tex [6]
-<images/modello_e_r.png, id=185, 1307.91074pt x 958.01817pt>
+ </home/pello/OneDrive/5° AI/elaborato/latex/images/ACQUISTA.png> </home/pello/OneDrive/5° AI/elaborato/latex/images/OFFRI.png> </home/pello/OneDrive/5° AI/elaborato/latex/images/TRANSAZIONI.png>]) (/home/pello/OneDrive/5° AI/elaborato/latex/content/03.analisi-funzionale.tex [5]) (/home/pello/OneDrive/5° AI/elaborato/latex/content/04.database.tex
+<images/modello_e_r.png, id=181, 1307.91074pt x 958.01817pt>
 File: images/modello_e_r.png Graphic file (type png)
 <use images/modello_e_r.png>
 Package pdftex.def Info: images/modello_e_r.png  used on input line 15.
 (pdftex.def)             Requested size: 379.2844pt x 277.81816pt.
- [7 </home/pello/OneDrive/5° AI/elaborato/latex/images/modello_e_r.png>] [8]
+ [6] [7 </home/pello/OneDrive/5° AI/elaborato/latex/images/modello_e_r.png>] [8] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 80.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 80.
  (/usr/share/texmf-dist/tex/latex/base/t1cmtt.fd
@@ -381,35 +373,49 @@ LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
 ) (/home/pello/OneDrive/5° AI/elaborato/latex/content/code/UserDTO.cs [9
 
 ]) [10] (/home/pello/OneDrive/5° AI/elaborato/latex/content/code/ProductDTO.cs [11]) (/home/pello/OneDrive/5° AI/elaborato/latex/content/code/TransactionDTO.cs [12]) (/home/pello/OneDrive/5° AI/elaborato/latex/content/code/linq.cs [13]) (/home/pello/OneDrive/5° AI/elaborato/latex/content/code/libreria.cs)) (/home/pello/OneDrive/5° AI/elaborato/latex/content/05.infrastruttura.tex
-<images/rete.png, id=393, 1233.85968pt x 767.11594pt>
+<images/rete.png, id=396, 1233.85968pt x 767.11594pt>
 File: images/rete.png Graphic file (type png)
 <use images/rete.png>
 Package pdftex.def Info: images/rete.png  used on input line 12.
 (pdftex.def)             Requested size: 592.24593pt x 368.21146pt.
- [14] [15 </home/pello/OneDrive/5° AI/elaborato/latex/images/rete.png (PNG copy)>]) (/home/pello/OneDrive/5° AI/elaborato/latex/content/06.sicurezza.tex) (/home/pello/OneDrive/5° AI/elaborato/latex/main.bbl
-Underfull \hbox (badness 5288) in paragraph at lines 4--8
-[]\T1/cmr/m/n/12 Mauro Pel-lo-na-ra.  Pro-to-ti-po na-vi-ga-bi-le del-l'ap-pli-ca-zio-ne mo-bi-
+ [14] [15 </home/pello/OneDrive/5° AI/elaborato/latex/images/rete.png (PNG copy)>]) (/home/pello/OneDrive/5° AI/elaborato/latex/content/06.sicurezza.tex [16
+
+] (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)) (/home/pello/OneDrive/5° AI/elaborato/latex/main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+[]\T1/cmr/m/n/12 Stack Over-flow.  Spie-ga-zio-ne del pat-tern po-st/-re-di-rec-t/-
  []
 
-) [16
 
-] (/home/pello/OneDrive/5° AI/elaborato/latex/main.aux)
+Underfull \hbox (badness 10000) in paragraph at lines 4--8
+\T1/cmr/m/n/12 get.  URL: [][]$\T1/cmtt/m/n/12 https : / / stackoverflow . com / questions / 4327236 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--14
+\T1/cmtt/m/n/12 / / mauro886267 . invisionapp . com / console / share / 7Z10U19EHJ /
+ []
+
+) [17] (/home/pello/OneDrive/5° AI/elaborato/latex/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: EDE837D3091067A02942352BD5311BCD;1430.
  ) 
 Here is how much of TeX's memory you used:
- 9332 strings out of 479383
- 140041 string characters out of 5875830
- 798179 words of memory out of 5000000
- 25980 multiletter control sequences out of 15000+600000
- 413753 words of font info for 47 fonts, out of 8000000 for 9000
+ 9222 strings out of 479383
+ 135564 string characters out of 5875830
+ 713129 words of memory out of 5000000
+ 25873 multiletter control sequences out of 15000+600000
+ 414836 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 66i,10n,73p,1183b,1893s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on "/home/pello/OneDrive/5° AI/elaborato/latex/main.pdf" (17 pages, 3042972 bytes).
+ 66i,10n,78p,1183b,2022s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on "/home/pello/OneDrive/5° AI/elaborato/latex/main.pdf" (18 pages, 3082656 bytes).
 PDF statistics:
- 508 PDF objects out of 1000 (max. 8388607)
- 459 compressed objects within 5 object streams
- 236 named destinations out of 1000 (max. 500000)
+ 527 PDF objects out of 1000 (max. 8388607)
+ 476 compressed objects within 5 object streams
+ 241 named destinations out of 1000 (max. 500000)
  230 words of extra memory for PDF output out of 10000 (max. 10000000)
 

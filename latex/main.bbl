@@ -1,8 +1,14 @@
 \begin{thebibliography}{1}
 
+\bibitem{PRG}
+Stack Overflow.
+\newblock Spiegazione del pattern post/redirect/get.
+\newblock URL:
+  \url{https://stackoverflow.com/questions/4327236/stop-browsers-asking-to-resend-form-data-on-refresh}.
+
 \bibitem{Prototipo}
 Mauro Pellonara.
-\newblock Prototipo navigabile dell'applicazione mobile.
+\newblock Prototipo navigabile dell'app mobile.
 \newblock URL:
   \url{https://mauro886267.invisionapp.com/console/share/7Z10U19EHJ/476334736}.
 
