@@ -6,10 +6,10 @@ Per garantire la semplicità di gestione e la velocità di esecuzione delle quer
 La tabella Users contiene le informazioni base necessarie per l'utilizzo della piattaforma: ID utente, nome utente, password, email identificativa, città di residenza, immagine di profilo, salt per la generazione dell'hash della password, api key per eseguire richieste tramite l'API e quantità di green coin posseduti. 
 \medskip
 
-La tabella Products contiene invece i seguenti campi: ID prodotto, nome prodotto, descrizione prodotto, immagine del prodotto, disponibilità (per tenere traccia dei prodotti anche dopo la loro vendita o la rimozione dal mercato), data dell'ultimo aggiornamento apportato al prodotto e ID utente proprietario dell'oggetto. 
+La tabella Products contiene invece i seguenti campi: ID prodotto, nome prodotto, descrizione prodotto, immagine del prodotto, disponibilità (per tenere traccia dei prodotti anche dopo la loro vendita o la rimozione dal mercato), data dell'ultimo aggiornamento apportato al prodotto e ID utente proprietario del prodotto. 
 \medskip
 
-La tabella Transactions contiene le transazioni effettuate tra gli utenti e ha i seguenti campi: ID transazione, ID prodotto scambiato, ID utente proprietario dell'oggetto al momento dello scambio (campo necessario per tenere traccia dei cambi di proprietà e degli scambi anche dopo che questi si siano conclusi), ID utente acquirente, stato della transazione (può essere "In Corso", "Completata Con Successo" o "Completata Senza Successo") e data dell'ultimo aggiornamento relativo alla transazione.  
+La tabella Transactions contiene le transazioni effettuate tra gli utenti e ha i seguenti campi: ID transazione, ID prodotto scambiato, ID utente proprietario del prodotto al momento dello scambio (campo necessario per tenere traccia dei cambi di proprietà e delle transazioni anche dopo che queste si sono concluse), ID utente acquirente, stato della transazione (può essere "In Corso", "Completata Con Successo" o "Completata Senza Successo") e data dell'ultimo aggiornamento relativo alla transazione. 
 \subsection{Modello E/R}
 \begin{figure}[ht]
     \centering\includegraphics[scale=0.29]{images/modello_e_r.png}
@@ -90,3 +90,14 @@ Il database è stato generato automaticamente da Entity Framework Core a partire
 
 \textbf{TransactionDTO.cs}
 \lstinputlisting{content/code/TransactionDTO.cs}
+
+\subsection{Query}
+Usando Entity Framework Core per la creazione e la gestione del database le query possono essere scritte con la sintassi sviluppata da Microsoft chiamata LINQ, alternativamente possono essere anche usati i metodi appositi inclusi nella libreria Microsoft dedicata (Microsoft.EntityFrameworkCore). Nel progetto ho scelto di usare la libreria Microsoft dedicata in quanto è la più veloce e quella che richiede meno l'intervento del programmatore, evitando quindi errori semplici di distrazione. 
+\bigskip
+
+\textbf{Query LINQ}
+\lstinputlisting{content/code/linq.cs}
+\bigskip
+
+\textbf{Query con metodi}
+\lstinputlisting{content/code/libreria.cs}
