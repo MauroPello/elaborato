@@ -7,5 +7,5 @@ ProductDTO product = (from product in products
                         where product.ProductID == 2
                         select product).First();
 
-// equivalente SQL
+// equivalente SQLite3
 // SELECT * FROM Products WHERE Products.ProductID = 2 LIMIT 1;
