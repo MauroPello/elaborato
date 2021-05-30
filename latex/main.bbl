@@ -1,10 +1,65 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{HTTPS}
+Cloudflare.
+\newblock Descrizione del protocollo https.
+\newblock URL: \url{https://www.cloudflare.com/learning/ssl/what-is-https/}.
+
+\bibitem{Sprechi}
+Il~fatto quotidiano.
+\newblock Abiti invenduti e la grande quantità di vestiti buttati.
+\newblock URL:
+  \url{https://www.ilfattoquotidiano.it/2020/02/01/i-marchi-di-alta-moda-bruciano-i-capi-invenduti-e-la-francia-prova-a-fermarli/5691528/}.
+
+\bibitem{RFC2898}
+IETF.
+\newblock Descrizione della funzione pbkdf2.
+\newblock URL: \url{https://datatracker.ietf.org/doc/html/rfc2898#section-5.2}.
+
+\bibitem{RFC8018}
+IETF.
+\newblock Indicazioni sul password hashing, versione aggiornata del rfc 2898.
+\newblock URL: \url{https://datatracker.ietf.org/doc/html/rfc8018}.
+
+\bibitem{Agenda2030}
+ONU Italia.
+\newblock L'agenda 2030 presentata direttamente dall'onu.
+\newblock URL: \url{https://unric.org/it/agenda-2030/}.
+
+\bibitem{LINQ}
+Documentazione Microsoft.
+\newblock Descrizione della sintassi linq.
+\newblock URL:
+  \url{https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/query-syntax-and-method-syntax-in-linq}.
+
+\bibitem{EFcore}
+Documentazione Microsoft.
+\newblock Descrizione della tecnologia entity framework core.
+\newblock URL: \url{https://docs.microsoft.com/en-us/ef/core/}.
+
+\bibitem{Microsoft.EFcore}
+Documentazione Microsoft.
+\newblock Documentazione della libreria microsoft.entityframeworkcore.
+\newblock URL:
+  \url{https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore?view=efcore-5.0}.
+
+\bibitem{HashingASPNET}
+Documentazione Microsoft.
+\newblock Eseguire l'hashing delle password in asp.net core.
+\newblock URL:
+  \url{https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/consumer-apis/password-hashing?view=aspnetcore-5.0}.
 
 \bibitem{PRG}
 Stack Overflow.
-\newblock Spiegazione del pattern post/redirect/get.
+\newblock Descrizione del pattern post/redirect/get.
 \newblock URL:
   \url{https://stackoverflow.com/questions/4327236/stop-browsers-asking-to-resend-form-data-on-refresh}.
+
+\bibitem{DTO}
+Stack Overflow.
+\newblock Documentazione della libreria microsoft.entityframeworkcore.
+\newblock URL:
+  \url{https://stackoverflow.com/questions/1051182/what-is-a-data-transfer-object-dto}.
 
 \bibitem{Prototipo}
 Mauro Pellonara.
@@ -16,5 +71,21 @@ Mauro Pellonara.
 Mauro Pellonara.
 \newblock Repository dedicata al progetto caricata su github.
 \newblock URL: \url{https://github.com/MauroPello/elaborato}.
+
+\bibitem{PBKDF2}
+Wikipedia.
+\newblock Funzione di derivazione della chiave pbkdf2.
+\newblock URL: \url{https://en.wikipedia.org/wiki/PBKDF2}.
+
+\bibitem{Hashing}
+Wikipedia.
+\newblock Funzione di hashing.
+\newblock URL: \url{https://it.wikipedia.org/wiki/Funzione_di_hash}.
+
+\bibitem{APIKEY}
+Wikipedia.
+\newblock Uso delle api key per l'autenticazione.
+\newblock URL:
+  \url{https://en.wikipedia.org/wiki/Application_programming_interface_key}.
 
 \end{thebibliography}

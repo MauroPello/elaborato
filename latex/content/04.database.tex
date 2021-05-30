@@ -11,13 +11,12 @@ La tabella Products contiene invece i seguenti campi: ID prodotto, nome prodotto
 
 La tabella Transactions contiene le transazioni effettuate tra gli utenti e ha i seguenti campi: ID transazione, ID prodotto scambiato, ID utente proprietario del prodotto al momento dello scambio (campo necessario per tenere traccia dei cambi di proprietà e delle transazioni anche dopo che queste si sono concluse), ID utente acquirente, stato della transazione (può essere "In Corso", "Completata Con Successo" o "Completata Senza Successo") e data dell'ultimo aggiornamento relativo alla transazione. 
 \subsection{Modello E/R}
-\begin{figure}[ht]
-    \centering\includegraphics[scale=0.29]{images/modello_e_r.png}
-    \caption{Modello E/R del database}
-\end{figure}
+\begin{center}
+    \includegraphics[scale=0.29]{images/modello_e_r.png}
+\end{center}
 \subsection{Modello logico}
-\begin{figure}[ht]
-    \centering\begin{tabular}{ |l|c|l| } 
+\begin{center}
+    \begin{tabular}{ |l|c|l| } 
     \hline
     \multicolumn{3}{|c|}{\large\textbf{Users}} \\
     \hline
@@ -34,10 +33,9 @@ La tabella Transactions contiene le transazioni effettuate tra gli utenti e ha i
     Balance & INTEGER & NOT NULL \\
     \hline
     \end{tabular}
-    \caption{Tabella Users parte del modello logico del database}
-\end{figure}
-\begin{figure}[ht]
-    \centering\begin{tabular}{ |l|c|l| } 
+\end{center}
+\begin{center}
+    \begin{tabular}{ |l|c|l| } 
     \hline
     \multicolumn{3}{|c|}{\large\textbf{Products}} \\
     \hline
@@ -52,10 +50,9 @@ La tabella Transactions contiene le transazioni effettuate tra gli utenti e ha i
     OwnerID & INTEGER & NOT NULL, FK(Users) \\
     \hline
     \end{tabular}
-    \caption{Tabella Products parte del modello logico del database}
-\end{figure}
-\begin{figure}[ht]
-    \centering\begin{tabular}{ |l|c|l| } 
+\end{center}
+\begin{center}
+    \begin{tabular}{ |l|c|l| } 
     \hline
     \multicolumn{3}{|c|}{\large\textbf{Transactions}} \\
     \hline
@@ -69,11 +66,9 @@ La tabella Transactions contiene le transazioni effettuate tra gli utenti e ha i
     LastUpdate & TEXT & NOT NULL \\
     \hline
     \end{tabular}
-    \caption{Tabella Transactions parte del modello logico del database}
-\end{figure}
-\clearpage
+\end{center}
 \subsection{Entity Framework Core}
-Il database è stato generato automaticamente da Entity Framework Core a partire dai modelli scritti in C\# e inseriti nel progetto (generazione code-first). I modelli inseriti devono essere riportati nel DbContext indicato nel file Startup.cs, il database context si occupa quindi di descrive il database e le tabelle che lo compongono, quest'ultime vengono invece descritte dai modelli indicati nel database context. La nomenclatura dei modelli comprende l'espressione DTO (Data Transfer Object) in quanto queste classi vengono usate per il trasferimento di dati dagli utenti al database. 
+Il database è stato generato automaticamente da Entity Framework Core a partire dai modelli scritti in C\# e inseriti nel progetto (generazione code-first) \cite{EFcore}. I modelli inseriti devono essere riportati nel DbContext indicato nel file Startup.cs, il database context si occupa quindi di descrive il database e le tabelle che lo compongono, quest'ultime vengono invece descritte dai modelli indicati nel database context. La nomenclatura dei modelli comprende l'espressione DTO (Data Transfer Object \cite{DTO}) in quanto queste classi vengono usate per il trasferimento dei dati dagli utenti al database all'interno del sistema distribuito sul quale è basata la piattaforma. 
 \bigskip
 
 \textbf{MainDbContext.cs}
@@ -92,7 +87,7 @@ Il database è stato generato automaticamente da Entity Framework Core a partire
 \lstinputlisting[style=csharp]{content/code/TransactionDTO.cs}
 
 \subsection{Query}
-Usando Entity Framework Core per la creazione e la gestione del database le query possono essere scritte con la sintassi sviluppata da Microsoft chiamata LINQ, alternativamente possono essere anche usati i metodi appositi inclusi nella libreria Microsoft dedicata (Microsoft.EntityFrameworkCore). Nel progetto ho scelto di usare la libreria Microsoft dedicata in quanto è la più veloce e quella che richiede meno l'intervento del programmatore, evitando quindi errori semplici di distrazione. 
+Usando Entity Framework Core per la creazione e la gestione del database le query possono essere scritte con la sintassi sviluppata da Microsoft chiamata LINQ \cite{LINQ}, alternativamente possono essere anche usati i metodi appositi inclusi nella libreria Microsoft dedicata (Microsoft.EntityFrameworkCore) \cite{Microsoft.EFcore}. Nel progetto ho scelto di usare la libreria Microsoft dedicata in quanto è la più veloce e quella che richiede meno l'intervento del programmatore, evitando quindi errori semplici di distrazione. 
 \bigskip
 
 \textbf{Query LINQ}

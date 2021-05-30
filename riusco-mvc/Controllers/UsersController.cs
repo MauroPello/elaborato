@@ -210,7 +210,7 @@ namespace riusco_mvc.Controllers
                 salt: Encoding.UTF8.GetBytes(salt),
                 prf: KeyDerivationPrf.HMACSHA256,
                 iterationCount: 10000,
-                numBytesRequested: 256 / 8));
+                numBytesRequested: 32));
         }
     }
 }
