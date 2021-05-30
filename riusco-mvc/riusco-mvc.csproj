@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <RootNamespace>riusco_mvc</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="5.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.4" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.4">
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        <PrivateAssets>all</PrivateAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="5.0.4" />
+      <PackageReference Include="SixLabors.ImageSharp" Version="1.0.3" />
+      <PackageReference Include="SQLitePCLRaw.bundle_e_sqlite3" Version="2.0.5-pre20210119130047" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="wwwroot\images\6e3ecfce-ce2a-41af-ac94-31ec5cbef50c.jpeg" />
+      <Content Remove="wwwroot\images\493e5808-e43e-4122-b397-67898f5de41d.png" />
+    </ItemGroup>
+
+</Project>
