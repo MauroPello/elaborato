@@ -1,14 +1,13 @@
 \section{Politiche di sicurezza}
-\subsection{Pratiche comuni}
-Gli e-commerce, più di molti altri siti web, devono garantire un livello di sicurezza più che eccellente in quanto le conseguenze causate da eventuali bug o vulnerabilità sono potenzialmente catastrofiche per gli utenti che usufruiscono della piattaforma e gli amministratori che ne sono responsabili. Ho quindi adottato numerose pratiche comuni in ambito web per garantire un livello di sicurezza consono alla piattaforma, queste sono: 
+Gli e-commerce, più di molti altri siti web, devono garantire un livello di sicurezza più che eccellente in quanto le conseguenze causate da eventuali bug o vulnerabilità sono potenzialmente catastrofiche per gli utenti che usufruiscono della piattaforma. All'interno del ciclo di vita del software l'azienda deve definire delle rigide politiche di sicurezza volte a garantire la continuità operativa e la riservatezza delle informazioni associate agli utenti. Ho quindi definito ed adottato le seguenti politiche di sicurezza: 
 \begin{itemize}
     \item \textbf{Rinominare i file caricati dagli utenti}, degli eventuali attaccanti possono caricare file con nomi particolari volti ad accedere a cartelle contenenti file sensibili che quindi risulterebbero compromessi; 
     \item \textbf{Controllare il contenuto dei file caricati dagli utenti}, gli unici file che gli utenti possono caricare sono le immagini, viene quindi fatto un doppio controllo (lato client e lato server) per assicurarsi che i file caricati rispettino il corretto formato; 
     \item \textbf{Uso del pattern Post/Redirect/Get}, questo pattern particolare adottato in maniera estensiva nel web permette di ovviare al problema della ricarica o navigazione temporale delle pagine e richieste già inviate al server \cite{PRG}. Seguendo questo pattern tutte le richieste POST verranno prima elaborate e poi reindirizzate su la stessa o un'altra pagina che verrà ottenuta tramite richiesta GET, in questo modo l'utente nella sua navigazione non incontrerà mai messaggi relativi alla celebre "Conferma reinvio modulo"; 
     \item \textbf{HTTPS} \cite{HTTPS}, il sito usa il protocollo TLS/SSL insieme al protocollo HTTP per la navigazione sicura all'interno del sito, i dati trasmessi da e verso il sito attraversano un tunnel end-to-end dentro il quale sono crittografati e non leggibili da possibili attaccanti; 
     \item \textbf{Autenticazione degli utenti}, gli utenti si devono autenticare per poter compiere azioni sul sito come inserire un prodotto; 
-    \item \textbf{Password hashing}, le password usate dagli utenti non vengono salvate in chiaro dal database che invece le memorizza già crittografate, in questo modo in caso di data breach le password degli utenti anche se diffuse pubblicamente non sarebbero comunque leggibili;
-    \item \textbf{Firewall}, .  
+    \item \textbf{Password hashing}, le password usate dagli utenti non vengono salvate in chiaro dal database che invece le memorizza già crittografate;
+    \item \textbf{Uso di un Firewall}, i dispositivi essendo connessi in rete possono anche essere soggetti di attacchi informatici basati sull'invio di pacchetti maliziosi, l'uso di un Firewall permette di bloccare questi pacchetti e garantire una connessione sicura.  
 \end{itemize} 
 \subsection{Autenticazione}
 La piattaforma ha due modalità di accesso: il sito web e l'API. Entrambe le modalità devono effettuare l'autenticazione dell'utente che s'interfaccia con la piattaforma Rius.Co. verificandone l'identità. 
@@ -41,7 +40,7 @@ Per eseguire l'hashing delle password ho implementato la funzione di derivazione
 \end{center}
 \clearpage
 
-Per ottenere la chiave derivata richiede quindi i seguenti parametri: 
+Per ottenere la chiave derivata sono quindi richiesti i seguenti parametri: 
 \begin{itemize}
     \item PRF, la funzione pseudocasuale che si occuperà ad ogni iterazione di eseguire l'hashing dei dati con la generazione del Message Authentication Code (HMAC);
     \item Password, la password della quale eseguire l'hashing e ottenerne la chiave derivata;
@@ -53,7 +52,7 @@ Per ottenere la chiave derivata richiede quindi i seguenti parametri:
 
 \begin{figure}[ht]
     \centering\includegraphics[scale=0.44]{images/Pbkdf2.png}
-    \caption{Rappresentazione grafica dell'algoritmo che compone un'iterazione}
+    \caption{Rappresentazione grafica dell'algoritmo che compone un'iterazione.}
 \end{figure}
 
 \medskip
@@ -72,3 +71,17 @@ private static string GetHash(string password, string salt)
 }
 \end{lstlisting}
 \subsection{Firewall}
+Un firewall consiste in un componente hardware o software che si occupa della difesa di una rete, questo analizza i pacchetti in entrata ed uscita e attraverso le regole fornite dall'amministratore di rete decide se permettere o bloccare il passaggio di questi pacchetti \cite{Firewall}. Le regole prendono il nome di access-list e definiscono il traffico che ha il permesso di attraversare la rete. Nel caso dell'infrastruttura sulla quale si appoggia Rius.Co. sono presenti due router che svolgono entrambi anche la funzione di firewall, questi sono collocati al bordo delle due reti, ovvero quella aziendale e quella contenente i server. Nel router di bordo collocato nella rete dei server il traffico nella sua completezza è permesso solo dalla rete aziendale, sono state però impostate due access-list per permettere l'accesso all'API server e al Web server che devono poter essere raggiungibili da chiunque. 
+\bigskip
+
+\textbf{Configurazione del firewall collocato sul router di bordo della rete dei server con indirizzo IP pubblico 1.0.0.1}
+\begin{lstlisting}[style=dos]
+    interface GigabitEthernet0/0
+        ip address 1.0.0.1 255.0.0.0
+        ip access-group 101 in
+        
+    access-list 101 permit ip any host 192.168.1.5
+    access-list 101 permit ip any host 192.168.1.3
+    access-list 101 permit ip 192.168.0.0 0.0.255.255 any
+    access-list 101 deny ip any any
+\end{lstlisting}
