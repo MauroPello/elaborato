@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using riusco_mvc.Models;
 
-// query che ottiene il prodotto con chiave primaria uguale a 2
+// query asincrona che ottiene il prodotto con chiave primaria uguale a 2
 ProductDTO product = await _context.Products.FindAsync(2);
 
 // equivalente SQLite3
