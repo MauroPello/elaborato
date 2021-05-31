@@ -56,7 +56,7 @@ Per ottenere la chiave derivata sono quindi richiesti i seguenti parametri:
 \end{figure}
 
 \medskip
-Nel mio caso PBKDF2 esegue 10000 iterazioni con l'algoritmo di hashing HMACSHA256, usa un Salt di 128 byte, produce un'elaborazione della password lunga 32 byte ed è implementato all'interno della seguente funzione. 
+Nella mia funzione GetHash PBKDF2 esegue 10000 iterazioni con l'algoritmo di hashing HMACSHA256, usa un Salt di 128 byte, e produce un'elaborazione della password lunga 32 byte. 
 \smallskip
 
 \begin{lstlisting}[style=csharp]
