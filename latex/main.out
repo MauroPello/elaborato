@@ -2,18 +2,17 @@
 \BOOKMARK [1][-]{section.2}{Analisi dei requisiti}{}% 2
 \BOOKMARK [1][-]{section.3}{Analisi funzionale}{}% 3
 \BOOKMARK [1][-]{section.4}{Database}{}% 4
-\BOOKMARK [2][-]{subsection.4.1}{Descrizione}{section.4}% 5
-\BOOKMARK [2][-]{subsection.4.2}{Modello E/R}{section.4}% 6
-\BOOKMARK [2][-]{subsection.4.3}{Modello logico}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.4}{Entity Framework Core}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.5}{Query}{section.4}% 9
-\BOOKMARK [1][-]{section.5}{Infrastruttura di rete}{}% 10
-\BOOKMARK [2][-]{subsection.5.1}{Descrizione}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.2}{Apparati di rete}{section.5}% 12
-\BOOKMARK [2][-]{subsection.5.3}{Server}{section.5}% 13
-\BOOKMARK [2][-]{subsection.5.4}{Progetto di rete}{section.5}% 14
-\BOOKMARK [1][-]{section.6}{Politiche di sicurezza}{}% 15
-\BOOKMARK [2][-]{subsection.6.1}{Pratiche comuni}{section.6}% 16
-\BOOKMARK [2][-]{subsection.6.2}{Autenticazione}{section.6}% 17
-\BOOKMARK [2][-]{subsection.6.3}{Password hashing}{section.6}% 18
-\BOOKMARK [1][-]{section*.2}{Riferimenti bibliografici}{}% 19
+\BOOKMARK [2][-]{subsection.4.1}{Modello E/R}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{Modello logico}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{Entity Framework Core}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.4}{Query}{section.4}% 8
+\BOOKMARK [1][-]{section.5}{Infrastruttura di rete}{}% 9
+\BOOKMARK [2][-]{subsection.5.1}{Apparati di rete}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.2}{Server}{section.5}% 11
+\BOOKMARK [2][-]{subsection.5.3}{Progetto di rete}{section.5}% 12
+\BOOKMARK [1][-]{section.6}{Politiche di sicurezza}{}% 13
+\BOOKMARK [2][-]{subsection.6.1}{Pratiche comuni}{section.6}% 14
+\BOOKMARK [2][-]{subsection.6.2}{Autenticazione}{section.6}% 15
+\BOOKMARK [2][-]{subsection.6.3}{Password hashing}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.4}{Firewall}{section.6}% 17
+\BOOKMARK [1][-]{section*.2}{Riferimenti bibliografici}{}% 18

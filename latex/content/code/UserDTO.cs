@@ -19,22 +19,8 @@ namespace riusco_mvc.Models
         public int Balance { get; set; }
 
         // metodi costruttori scritti con overloading
-
         public UserDTO(string name, string password, string email, string image, string salt, string apiKey, int balance, string city)
         {
-            Name = name;
-            Password = password;
-            Email = email;
-            Image = image;
-            Salt = salt;
-            ApiKey = apiKey;
-            Balance = balance;
-            City = city;
-        }
-        
-        public UserDTO(int userId, string name, string password, string email, string image, string salt, string apiKey, int balance, string city)
-        {
-            UserID = userId;
             Name = name;
             Password = password;
             Email = email;

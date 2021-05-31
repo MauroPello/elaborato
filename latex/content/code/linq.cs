@@ -1,5 +1,6 @@
 using Microsoft.Linq;
 using Microsoft.EntityFrameworkCore;
+using riusco_mvc.Models;
 
 // query che ottiene il prodotto con chiave primaria uguale a 2
 List<ProductDTO> products = _context.Products.ToList();

@@ -24,7 +24,6 @@ namespace riusco_mvc.Models
         public string State { get; set; }
 
         // metodi costruttori scritti con overloading 
-       
         public TransactionDTO(int productId, int ownerID, int buyerId, DateTime lastUpdate, string state)
         {
             ProductID = productId;

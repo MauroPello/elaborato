@@ -9,9 +9,9 @@
     },
     {
         "transactionID": 7,
-        "productID": 12,
-        "ownerID": 9,
-        "buyerID": 10,
+        "productID": 2,
+        "ownerID": 10,
+        "buyerID": 9,
         "lastUpdate": "2021-05-18T11:51:42.1961266",
         "state": "Pending"
     },

@@ -1,5 +1,4 @@
 \section{Database}
-\subsection{Descrizione}
 Per garantire la semplicità di gestione e la velocità di esecuzione delle query nel database sono presenti solo 3 tabelle: Users, Products e Transactions. Queste sono il minimo indispensabile per la creazione di un e-commerce funzionante. Quella riportata nel modello E/R è la prima versione del database che permette di caricare un'unica immagine per prodotto, nelle versioni successive verranno introdotti aggiornamenti graduali paralleli allo sviluppo completo del sito web. Il database è visualizzabile insieme a tutto il progetto scaricando la repository di GitHub \href{https://github.com/MauroPello/elaborato}{disponibile qui} \cite{GitHub}. 
 \medskip
 
@@ -10,6 +9,9 @@ La tabella Products contiene invece i seguenti campi: codice identificativo, nom
 \medskip
 
 La tabella Transactions contiene le transazioni effettuate tra gli utenti descritte attraverso i seguenti campi: codice identificativo della transazione, codice identificativo del prodotto scambiato, codice identificativo dell'utente proprietario del prodotto al momento dello scambio (campo necessario per tenere traccia dei cambi di proprietà e delle transazioni anche dopo che queste si sono concluse), codice identificativo dell'utente acquirente, stato della transazione ("In Corso", "Completata Con Successo" o "Completata Senza Successo") e data dell'ultimo aggiornamento relativo alla transazione. 
+\medskip
+
+\textbf{2 Frasi aggiuntive.}
 \subsection{Modello E/R}
 \begin{center}
     \includegraphics[scale=0.29]{images/modello_e_r.png}
@@ -68,9 +70,10 @@ La tabella Transactions contiene le transazioni effettuate tra gli utenti descri
     \end{tabular}
 \end{center}
 \subsection{Entity Framework Core}
-Il database è stato generato automaticamente da Entity Framework Core a partire dai modelli scritti in C\# e inseriti nel progetto (generazione code-first) \cite{EFcore}. I modelli inseriti devono essere riportati nel DbContext indicato nel file Startup.cs, il database context si occupa quindi di descrivere il database e le tabelle che lo compongono, i campi appartenenti alle tabelle vengono invece descritti all'interno dei modelli indicati nel database context. La nomenclatura dei modelli comprende l'espressione DTO (Data Transfer Object \cite{DTO}) in quanto queste classi vengono usate per il trasferimento dei dati dagli utenti al database all'interno del sistema distribuito sul quale è basata la piattaforma. 
+Per la creazione del database ho scelto Entity Framework Core, 
+Il database è stato generato automaticamente da a partire dai modelli scritti in C\# e inseriti nel progetto (generazione code-first) \cite{EFcore}. I modelli inseriti devono essere riportati nel DbContext indicato nel file Startup.cs, il database context si occupa quindi di descrivere il database e le tabelle che lo compongono, i campi appartenenti alle tabelle vengono invece descritti all'interno dei modelli indicati nel database context. La nomenclatura dei modelli comprende l'espressione DTO (Data Transfer Object \cite{DTO}) in quanto queste classi vengono usate per il trasferimento dei dati dagli utenti al database all'interno del sistema distribuito sul quale è basata la piattaforma. \textbf{2 Frasi aggiuntive.}
 \bigskip
-
+\clearpage
 \textbf{MainDbContext.cs}
 \lstinputlisting[style=csharp]{content/code/MainDbContext.cs}
 \bigskip
@@ -87,11 +90,12 @@ Il database è stato generato automaticamente da Entity Framework Core a partire
 \lstinputlisting[style=csharp]{content/code/TransactionDTO.cs}
 
 \subsection{Query}
-Usando Entity Framework Core per la creazione e la gestione del database le query possono essere scritte con la sintassi sviluppata da Microsoft chiamata LINQ \cite{LINQ}, alternativamente possono essere anche usati i metodi appositi inclusi nella libreria Microsoft dedicata (Microsoft.EntityFrameworkCore) \cite{Microsoft.EFcore}. Nel progetto ho scelto di usare la libreria Microsoft dedicata in quanto è la più veloce e quella che richiede meno l'intervento del programmatore, evitando quindi errori semplici di distrazione. 
+Usando Entity Framework Core per la creazione e la gestione del database le query possono essere scritte con la sintassi sviluppata da Microsoft chiamata LINQ (Language Integrated Query) che è integrata direttamente nel linguaggio C\# \cite{LINQ}. Alternativamente possono essere anche usati i metodi appositi inclusi nella libreria Microsoft.EntityFrameworkCore \cite{Microsoft.EFcore}, questi metodi si occupano di recuperare i dati dal database, modificare quelli già presenti ed eseguire query complesse. Entrambe le modalità per l'esecuzione delle query possono lavorare in modo asincrono, ciò rende quindi Entity Framework Core perfetto per l'ambiente web. Nel progetto ho scelto di usare la libreria Microsoft dedicata in quanto è la più veloce e quella che richiede meno l'intervento del programmatore, evitando quindi errori semplici di distrazione o tempo perso ad ideare query inutilmente complesse. 
 \bigskip
-
+\clearpage
 \textbf{Query scritta con la sintassi LINQ}
 \lstinputlisting[style=csharp]{content/code/linq.cs}
+\bigskip
 \bigskip
 
 \textbf{Query con i metodi appartenenti alla libreria Microsoft}

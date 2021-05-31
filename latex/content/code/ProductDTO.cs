@@ -20,7 +20,6 @@ namespace riusco_mvc.Models
         public UserDTO Owner { get; set; }
 
         // metodi costruttori scritti con overloading
-
         public ProductDTO(string name, string description, string image, DateTime lastUpdate, bool isAvailable, int ownerId)
         {
             Name = name;
@@ -30,18 +29,7 @@ namespace riusco_mvc.Models
             IsAvailable = isAvailable;
             OwnerID = ownerId;
         }
-        
-        public ProductDTO(int productId, string name, string description, string image, DateTime lastUpdate, bool isAvailable, int ownerId)
-        {
-            ProductID = productId;
-            Name = name;
-            Description = description;
-            Image = image;
-            LastUpdate = lastUpdate;
-            IsAvailable = isAvailable;
-            OwnerID = ownerId;
-        }
-        
+
         public ProductDTO() { }
     }
 }
