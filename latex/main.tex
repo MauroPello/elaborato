@@ -5,10 +5,8 @@
 \usepackage[italian]{babel}
 \usepackage{subfiles}
 \usepackage{graphicx}
-\usepackage{transparent}
 \usepackage{hyperref}
 \usepackage{subfigure}
-\usepackage{rotating}
 \usepackage[nottoc]{tocbibind}
 \usepackage{url}
 \usepackage{listings}
@@ -70,7 +68,7 @@
 
         \vfill
 
-        {\transparent{1}\includegraphics[scale=.42]{images/logo.png}}
+        {\includegraphics[scale=.42]{images/logo.png}}
 
         \vfill
 
@@ -94,12 +92,28 @@
 \newpage
 
 \subfile{content/01.introduzione.tex}
+\clearpage
 \subfile{content/02.analisi-requisti.tex}
+\clearpage
 \subfile{content/03.analisi-funzionale.tex}
+\clearpage
 \subfile{content/04.database.tex}
+\clearpage
 \subfile{content/05.infrastruttura.tex}
+\clearpage
 \subfile{content/06.sicurezza.tex}
+\clearpage
 \bibliography{content/main.bib}
 
 \end{document}
-% hashing or encryption?
+% cenni 3 tier e cloud hosting @ Google
+% aspnet core 5.0 
+% c#
+% mvc
+% sqlite3
+% ef core definizione e features (migrations e auto gen)
+% drawsql.app
+
+% views (razor pages e blazor components)
+% controllers
+% js, css, ajax

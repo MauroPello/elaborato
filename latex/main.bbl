@@ -45,6 +45,44 @@ Documentazione Microsoft.
 \newblock URL:
   \url{https://docs.microsoft.com/en-us/dotnet/api/microsoft.entityframeworkcore?view=efcore-5.0}.
 
+\bibitem{VPC}
+Documentazione~Google Cloud.
+\newblock Documentazione della tecnologia VPC.
+\newblock URL: \url{https://cloud.google.com/vpc/docs/overview}.
+
+\bibitem{Qwiklabs}
+Mauro Pellonara.
+\newblock Pagina pubblica della piattaforma Google Qwiklabs.
+\newblock URL:
+  \url{https://google.qwiklabs.com/public_profiles/9e3203d3-fe41-485a-b4a5-7a3b7b331bc1}.
+
+\bibitem{CloudVPN}
+Documentazione~Google Cloud.
+\newblock Documentazione della tecnologia HA Cloud VPN.
+\newblock URL:
+  \url{https://cloud.google.com/network-connectivity/docs/how-to/choose-product#cloud-vpn}.
+
+\bibitem{SDN}
+Wikipedia.
+\newblock Il Software-defined networking.
+\newblock URL: \url{https://en.wikipedia.org/wiki/Software-defined_networking}.
+
+\bibitem{Cables}
+Alibaba.
+\newblock Cavi di Categoria 6A e schermatura SFTP.
+\newblock URL: \url{https://www.alibaba.com/showroom/cat6a-price.html}.
+
+\bibitem{3Tier}
+Altexsoft.
+\newblock Architettura a 3 tier per le web app.
+\newblock URL:
+  \url{https://www.altexsoft.com/blog/engineering/web-application-architecture-how-the-web-works/}.
+
+\bibitem{Kubernetes}
+Documentazione~Google Cloud.
+\newblock Documentazione della tecnologia Kubernetes.
+\newblock URL: \url{https://cloud.google.com/kubernetes-engine/docs}.
+
 \bibitem{PRG}
 Stack Overflow.
 \newblock Descrizione del pattern Post/Redirect/Get.

@@ -3,23 +3,19 @@
 \contentsline {section}{\numberline {1}Introduzione}{2}{section.1}%
 \contentsline {section}{\numberline {2}Analisi dei requisiti}{4}{section.2}%
 \contentsline {section}{\numberline {3}Analisi funzionale}{6}{section.3}%
-\contentsline {section}{\numberline {4}Database}{6}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Descrizione}{6}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Modello E/R}{7}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Modello logico}{7}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Entity Framework Core}{8}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Query}{13}{subsection.4.5}%
-\contentsline {section}{\numberline {5}Infrastruttura IT}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Descrizione}{14}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Apparati Utilizzati}{14}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Descrizione}{14}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Data server}{14}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}Application server}{14}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}API server}{14}{subsubsection.5.2.4}%
-\contentsline {subsubsection}{\numberline {5.2.5}Web server}{14}{subsubsection.5.2.5}%
-\contentsline {subsection}{\numberline {5.3}Progetto di rete}{14}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Politiche di sicurezza}{16}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Pratiche comuni}{16}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Autenticazione}{17}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Password hashing}{18}{subsection.6.3}%
-\contentsline {section}{Riferimenti bibliografici}{20}{section*.2}%
+\contentsline {section}{\numberline {4}Database}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Descrizione}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Modello E/R}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Modello logico}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Entity Framework Core}{9}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Query}{14}{subsection.4.5}%
+\contentsline {section}{\numberline {5}Infrastruttura di rete}{15}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Descrizione}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Apparati di rete}{16}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Server}{16}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Progetto di rete}{18}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Politiche di sicurezza}{20}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Pratiche comuni}{20}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Autenticazione}{21}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Password hashing}{22}{subsection.6.3}%
+\contentsline {section}{Riferimenti bibliografici}{25}{section*.2}%

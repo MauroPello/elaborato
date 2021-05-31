@@ -7,17 +7,13 @@
 \BOOKMARK [2][-]{subsection.4.3}{Modello logico}{section.4}% 7
 \BOOKMARK [2][-]{subsection.4.4}{Entity Framework Core}{section.4}% 8
 \BOOKMARK [2][-]{subsection.4.5}{Query}{section.4}% 9
-\BOOKMARK [1][-]{section.5}{Infrastruttura IT}{}% 10
+\BOOKMARK [1][-]{section.5}{Infrastruttura di rete}{}% 10
 \BOOKMARK [2][-]{subsection.5.1}{Descrizione}{section.5}% 11
-\BOOKMARK [2][-]{subsection.5.2}{Apparati Utilizzati}{section.5}% 12
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Descrizione}{subsection.5.2}% 13
-\BOOKMARK [3][-]{subsubsection.5.2.2}{Data server}{subsection.5.2}% 14
-\BOOKMARK [3][-]{subsubsection.5.2.3}{Application server}{subsection.5.2}% 15
-\BOOKMARK [3][-]{subsubsection.5.2.4}{API server}{subsection.5.2}% 16
-\BOOKMARK [3][-]{subsubsection.5.2.5}{Web server}{subsection.5.2}% 17
-\BOOKMARK [2][-]{subsection.5.3}{Progetto di rete}{section.5}% 18
-\BOOKMARK [1][-]{section.6}{Politiche di sicurezza}{}% 19
-\BOOKMARK [2][-]{subsection.6.1}{Pratiche comuni}{section.6}% 20
-\BOOKMARK [2][-]{subsection.6.2}{Autenticazione}{section.6}% 21
-\BOOKMARK [2][-]{subsection.6.3}{Password hashing}{section.6}% 22
-\BOOKMARK [1][-]{section*.2}{Riferimenti bibliografici}{}% 23
+\BOOKMARK [2][-]{subsection.5.2}{Apparati di rete}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.3}{Server}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.4}{Progetto di rete}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Politiche di sicurezza}{}% 15
+\BOOKMARK [2][-]{subsection.6.1}{Pratiche comuni}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.2}{Autenticazione}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.3}{Password hashing}{section.6}% 18
+\BOOKMARK [1][-]{section*.2}{Riferimenti bibliografici}{}% 19

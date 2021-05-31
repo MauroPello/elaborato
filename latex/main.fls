@@ -134,36 +134,6 @@ INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT /usr/share/texmf-dist/tex/latex/graphics-def/pdftex.def
-INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
-INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
-INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
-INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
-INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
-INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
-INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
-INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
-INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
-INPUT /usr/share/texmf-dist/tex/latex/transparent/transparent.sty
-INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
-INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
-INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT /usr/share/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -184,6 +154,16 @@ INPUT /usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT /usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT /usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT /usr/share/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/share/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 INPUT /usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 INPUT /usr/share/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -254,6 +234,16 @@ INPUT /usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 INPUT /usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 INPUT /usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 INPUT /usr/share/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
+INPUT /usr/share/texmf-dist/tex/latex/auxhook/auxhook.sty
 INPUT /usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/share/texmf-dist/tex/latex/kvoptions/kvoptions.sty
@@ -386,26 +376,6 @@ INPUT /usr/share/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT /usr/share/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT /usr/share/texmf-dist/tex/latex/subfigure/subfigure.cfg
 INPUT /usr/share/texmf-dist/tex/latex/subfigure/subfigure.cfg
-INPUT /usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texmf-dist/tex/latex/graphics/rotating.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
-INPUT /usr/share/texmf-dist/tex/latex/base/ifthen.sty
 INPUT /usr/share/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 INPUT /usr/share/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 INPUT /usr/share/texmf-dist/tex/latex/tocbibind/tocbibind.sty
@@ -653,6 +623,11 @@ INPUT /home/pello/OneDrive/5° AI/elaborato/latex/content/05.infrastruttura.tex
 INPUT /home/pello/OneDrive/5° AI/elaborato/latex/content/05.infrastruttura.tex
 INPUT /home/pello/OneDrive/5° AI/elaborato/latex/content/05.infrastruttura.tex
 INPUT /home/pello/OneDrive/5° AI/elaborato/latex/content/05.infrastruttura.tex
+INPUT /home/pello/OneDrive/5° AI/elaborato/latex/images/3tier.png
+INPUT /home/pello/OneDrive/5° AI/elaborato/latex/images/3tier.png
+INPUT /home/pello/OneDrive/5° AI/elaborato/latex/images/3tier.png
+INPUT /home/pello/OneDrive/5° AI/elaborato/latex/images/3tier.png
+INPUT /home/pello/OneDrive/5° AI/elaborato/latex/images/3tier.png
 INPUT /home/pello/OneDrive/5° AI/elaborato/latex/images/rete.png
 INPUT /home/pello/OneDrive/5° AI/elaborato/latex/images/rete.png
 INPUT /home/pello/OneDrive/5° AI/elaborato/latex/images/rete.png
