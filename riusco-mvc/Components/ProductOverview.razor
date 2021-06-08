@@ -6,7 +6,7 @@
       <span class="omrs-input-helper">Enter keywords</span>
     </label>
   </div>
-  <button class="btn btn-primary" style="padding: .2rem .4rem; margin-left: 1vw; margin-bottom: 8vh;" @onclick="(e => UpdateProducts())" >Search</button>
+  <button class="btn btn-primary" style="padding: .2rem .4rem; margin-left: 1rem; margin-bottom: 3rem;" @onclick="(e => UpdateProducts())" >Search</button>
 </div>
 @if (products.Count == 0)
 {
@@ -47,10 +47,6 @@
             <div class="card-img" style="background-image: url('/images/products/@selectedProduct.Image');">
             </div>
             <div class="card-body">
-              <div style="display: flex;">
-                <p class="card-text" style="margin-right: .5rem;">Price: 1</p>
-                <img src="./images/green_coin.png" alt="green-coin" width="25px" height="25px"/>
-              </div>
               <div style="max-width: 100%">
                 <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">Description: @selectedProduct.Description</p>
               </div>

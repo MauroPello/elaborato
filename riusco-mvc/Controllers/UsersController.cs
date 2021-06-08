@@ -126,15 +126,15 @@ namespace riusco_mvc.Controllers
             if (_context.Users.FirstOrDefault(x => x.Email == userViewModel.Email) != null)
                 return BadRequest();
             
-            var salt = new byte[128];
+            var salt = new byte[32];
             var apiKey = new byte[32];
             var rng = new RNGCryptoServiceProvider();
             rng.GetBytes(salt);
             rng.GetBytes(apiKey);
-            var user = new UserDTO(userViewModel.Name, GetHash(userViewModel.Password, Encoding.UTF8.GetString(salt)), userViewModel.Email, UploadImage(userViewModel.Image), Encoding.UTF8.GetString(salt), Convert.ToBase64String(apiKey), 1, userViewModel.City);
-            await _context.Users.AddAsync(user);
+            var user = new UserDTO(userViewModel.Name, GetHash(userViewModel.Password, Convert.ToBase64String(salt)), userViewModel.Email, UploadImage(userViewModel.Image), Convert.ToBase64String(salt), Convert.ToBase64String(apiKey), 1, userViewModel.City);
             try
             {
+                await _context.Users.AddAsync(user);
                 await _context.SaveChangesAsync();
             }
             catch (DbUpdateException)
@@ -151,7 +151,6 @@ namespace riusco_mvc.Controllers
             if (user == null || (api_key != _configuration["api_key"] && api_key != user.ApiKey))
                 return NotFound();
             
-            var userId = user.UserID;
             _context.Users.Remove(user);
             await _context.SaveChangesAsync();
 
@@ -172,7 +171,7 @@ namespace riusco_mvc.Controllers
             {
                 return NotFound();
             }
-
+            
             if (GetHash(password, user.Salt).Equals(user.Password))
                 return Ok(user);
             
@@ -187,11 +186,17 @@ namespace riusco_mvc.Controllers
                 return "default_profile_picture.png";
 
             using var fileImage = Image.Load(image.OpenReadStream());
-            if (fileImage.Height > 1080)
+            var height = fileImage.Height;
+            var width = fileImage.Width;
+            if (height > 1080)
                 fileImage.Mutate(x => x.Resize(0, 1080));
-            if (fileImage.Width > 3840)
+            if (width > 3840)
                 fileImage.Mutate(x => x.Resize(3840, 0));
-                        
+            if (height > width)
+                fileImage.Mutate(x => x.Crop(new Rectangle((width - width) / 2, (height - width) / 2, width,width)));
+            else
+                fileImage.Mutate(x => x.Crop(new Rectangle((width - height) / 2, (height - height)/ 2, height, height)));
+
             fileImage.Save(Path.Combine(_environment.WebRootPath, "images", "users", imageName));
 
             return imageName;
@@ -199,7 +204,7 @@ namespace riusco_mvc.Controllers
 
         private void DeleteImage(string imageName)
         {
-            if (imageName!= "default_profile_picture.png")
+            if (imageName != "default_profile_picture.png")
                 System.IO.File.Delete(Path.Combine(_environment.WebRootPath, "images", "users", imageName));
         }
         
