@@ -22,25 +22,28 @@
                     <img src="/images/green_coin.png" alt="green-coin" width="25px" height="25px"/>
                 </div>
             </div>
-            <div class="product-button">
-                @if (Context.Session.GetInt32("userId").HasValue)
-                {
-                    @if (Context.Session.GetInt32("userId").Value == Model.Owner.UserID)
+            @if (Model.Product.IsAvailable)
+            {
+                <div class="product-button">
+                    @if (Context.Session.GetInt32("userId").HasValue)
                     {
-                        <a class="btn btn-primary" style="margin-right: .5rem; padding: .2rem .5rem;" target="_blank" href='https://@Context.Request.Host/Home/UpdateProducts/@Model.Product.ProductID?name=@Model.Product.Name'>Edit</a>
-                        <form method="post">
-                            <button type="submit" name="button" value="delete" style="padding: .2rem .5rem;" class="btn btn-danger">Delete</button>
-                        </form>
+                        @if (Context.Session.GetInt32("userId").Value == Model.Owner.UserID)
+                        {
+                            <a class="btn btn-primary" style="margin-right: .5rem; padding: .2rem .5rem;" target="_blank" href='https://@Context.Request.Host/Home/UpdateProducts/@Model.Product.ProductID?name=@Model.Product.Name'>Edit</a>
+                            <form method="post">
+                                <button type="submit" name="button" value="delete" style="padding: .2rem .5rem;" class="btn btn-danger">Delete</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <form method="post">
+                                <input type="hidden" name="ownerId" value="@Model.Owner.UserID" />
+                                <button type="submit" name="button" value="buy" style="padding: .2rem .5rem;" class="btn btn-primary">Buy Now</button>
+                            </form>
+                        }
                     }
-                    else
-                    {
-                        <form method="post">
-                            <input type="hidden" name="ownerId" value="@Model.Owner.UserID" />
-                            <button type="submit" name="button" value="buy" style="padding: .2rem .5rem;" class="btn btn-primary">Buy Now</button>
-                        </form>
-                    }
-                }
-            </div>
+                </div>
+            }
             <a href="/Home/User/@Model.Owner.UserID" style="color: black; text-decoration: none;" target="_blank"><div class="product-seller">
                 <img src="/images/users/@Model.Owner.Image" alt="user-image"/>
                 <h6 style="align-self: center;">@Model.Owner.Name</h6>

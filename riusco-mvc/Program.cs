@@ -15,11 +15,3 @@ namespace riusco_mvc
                 .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
     }
 }
-/*
- TODO:
-    - Style Home Page (Include Login and Register on a toggle panel)
-
-    + Code review (Saving changes?)
-    -- Security check
-    + Code review
-*/
