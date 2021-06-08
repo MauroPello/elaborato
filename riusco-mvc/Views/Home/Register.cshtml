@@ -26,9 +26,9 @@
     </div>
     <div class="omrs-input-group">
         <label class="omrs-input-underlined">
-        <input type="text" name="name" placeholder=" " required>
-        <span class="omrs-input-label">Name</span>
-        <span class="omrs-input-helper">Enter name</span>
+            <input type="text" name="name" placeholder=" " required>
+            <span class="omrs-input-label">Name</span>
+            <span class="omrs-input-helper">Enter name</span>
         </label>
     </div>
     <div class="omrs-input-group">
@@ -56,13 +56,13 @@
     </div>
     <div class="omrs-input-group">
         <label class="omrs-input-underlined">
-        <input type="text" name="city" placeholder=" " required>
-        <span class="omrs-input-label">City</span>
-        <span class="omrs-input-helper">Enter city</span>
+            <input type="text" name="city" placeholder=" " required>
+            <span class="omrs-input-label">City</span>
+            <span class="omrs-input-helper">Enter city</span>
         </label>
     </div>
     <div style="margin-bottom: 1.5rem;">
-        <h5 style="color: grey">Image</h5>
+        <h4 style="margin-left: 0.8375rem; color: grey">Image</h4>
         <div class="image-upload-wrap">
             <input class="file-upload-input" type='file' name="image" onchange="readURL(this);" accept="image/*" />
             <div class="drag-text">
@@ -79,15 +79,15 @@
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Register</button>
     </div>
-    
-     @section Scripts {
-        <script>
-            $(document).ready(function () {
-                $('.custom-file-input').on("change", function () {
-                    var fileName = $(this).val().split("\\").pop();
-                    $(this).next('.custom-file-label').html(fileName);
-                });
-            });
-        </script>
-    }
 </form>
+
+@section Scripts {
+<script>
+    $(document).ready(function () {
+        $('.custom-file-input').on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).next('.custom-file-label').html(fileName);
+        });
+    });
+</script>
+}

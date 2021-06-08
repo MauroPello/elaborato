@@ -24,39 +24,39 @@ namespace riusco_mvc.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TransactionDTO>>> GetTransactions([FromForm] string api_key)
+        public async Task<ActionResult<IEnumerable<TransactionDTO>>> GetTransactions([FromForm] string apiKey)
         {
-            if (api_key == _configuration["api_key"])
+            if (apiKey == _configuration["apiKey"])
                 return await _context.Transactions.OrderByDescending(t => t.LastUpdate).ToListAsync();
 
             return BadRequest();
         }
         
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TransactionDTO>>> GetTransactionsByUserID(int value, [FromForm] string api_key)
+        public async Task<ActionResult<IEnumerable<TransactionDTO>>> GetTransactionsByUserID(int value, [FromForm] string apiKey)
         {
             var user = await _context.Users.FindAsync(value);
             if (user == null)
                 return NotFound();
             
-            if (api_key != _configuration["api_key"] && api_key != user.ApiKey)
+            if (apiKey != _configuration["apiKey"] && apiKey != user.ApiKey)
                 return BadRequest();
 
             return await _context.Transactions.Where(x => x.OwnerID == user.UserID || x.BuyerID == user.UserID).OrderByDescending(t => t.LastUpdate).ToListAsync();
         }
 
         [HttpGet]
-        public async Task<ActionResult<TransactionDTO>> GetTransaction(int value, [FromForm] string api_key)
+        public async Task<ActionResult<TransactionDTO>> GetTransaction(int value, [FromForm] string apiKey)
         {
             var transaction = await _context.Transactions.FindAsync(value);
-            if (transaction == null || (api_key != _configuration["api_key"] && api_key != transaction.Owner.ApiKey && api_key != transaction.Buyer.ApiKey))
+            if (transaction == null || (apiKey != _configuration["apiKey"] && apiKey != transaction.Owner.ApiKey && apiKey != transaction.Buyer.ApiKey))
                 return BadRequest();
 
             return transaction;
         }
         
         [HttpPut]
-        public async Task<IActionResult> UpdateState(int value, [FromForm] int State, [FromForm] string api_key)
+        public async Task<IActionResult> UpdateState(int value, [FromForm] int State, [FromForm] string apiKey)
         {
             var oldTransaction = await _context.Transactions.FindAsync(value);
             if (oldTransaction == null)
@@ -71,13 +71,13 @@ namespace riusco_mvc.Controllers
             if (product == null)
                 return NotFound();
             
-            if (api_key != _configuration["api_key"] && api_key != owner.ApiKey && api_key != buyer.ApiKey)
+            if (apiKey != _configuration["apiKey"] && apiKey != owner.ApiKey && apiKey != buyer.ApiKey)
                 return BadRequest();
 
             if (oldTransaction.State != "Pending")
                 return BadRequest();
 
-            if (State == 2 && api_key != _configuration["api_key"] && api_key != buyer.ApiKey)
+            if (State == 2 && apiKey != _configuration["apiKey"] && apiKey != buyer.ApiKey)
                 return BadRequest();
             
             var state = State switch
@@ -156,15 +156,15 @@ namespace riusco_mvc.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<TransactionDTO>> PostTransaction([FromForm] int ProductID, [FromForm] int SellerID, [FromForm] int BuyerID, [FromForm] string api_key)
+        public async Task<ActionResult<TransactionDTO>> PostTransaction([FromForm] int ProductID, [FromForm] int OwnerID, [FromForm] int BuyerID, [FromForm] string apiKey)
         {
             var product = await _context.Products.FindAsync(ProductID);
-            var seller = await _context.Users.FindAsync(SellerID);
+            var seller = await _context.Users.FindAsync(OwnerID);
             var buyer = await _context.Users.FindAsync(BuyerID);
             if (seller == null || buyer == null || product == null || !product.IsAvailable)
                 return BadRequest();
 
-            if (api_key != _configuration["api_key"] && api_key != seller.ApiKey && api_key != buyer.ApiKey)
+            if (apiKey != _configuration["apiKey"] && apiKey != seller.ApiKey && apiKey != buyer.ApiKey)
                 return BadRequest();
 
             if (buyer.Balance < 1)
@@ -183,7 +183,7 @@ namespace riusco_mvc.Controllers
                 return BadRequest();
             }
 
-            var transactionDTO = new TransactionDTO(ProductID, SellerID, BuyerID, DateTime.Now, "Pending");
+            var transactionDTO = new TransactionDTO(ProductID, OwnerID, BuyerID, DateTime.Now, "Pending");
             await _context.Transactions.AddAsync(transactionDTO);
             try
             {
@@ -207,7 +207,7 @@ namespace riusco_mvc.Controllers
                 return BadRequest();
             }
             
-            return CreatedAtAction("GetTransaction", new { value = transactionDTO.TransactionID, api_key }, transactionDTO);
+            return CreatedAtAction("GetTransaction", new { value = transactionDTO.TransactionID, apiKey }, transactionDTO);
         }
     }
 }

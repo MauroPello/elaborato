@@ -17,7 +17,7 @@
             {
                 var multipartContent = new MultipartFormDataContent
                 {
-                    {new StringContent(Configuration["api_key"]), "api_key"}
+                    {new StringContent(Configuration["apiKey"]), "apiKey"}
                 };
                 request.Content = multipartContent;
 

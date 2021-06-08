@@ -71,14 +71,14 @@ namespace riusco_mvc.Controllers
         }
         
         [HttpPut]
-        public async Task<IActionResult> PutProduct(int value, [FromForm] Product product, [FromForm] string api_key)
+        public async Task<IActionResult> PutProduct(int value, [FromForm] Product product, [FromForm] string apiKey)
         {
             var oldProduct = await _context.Products.FindAsync(value);
             if (oldProduct == null || !oldProduct.IsAvailable)
                 return NotFound();
             
             var user = await _context.Users.FindAsync(oldProduct.OwnerID);
-            if (api_key != _configuration["api_key"] && api_key != user.ApiKey)
+            if (apiKey != _configuration["apiKey"] && apiKey != user.ApiKey)
                 return BadRequest();
             
             _context.Entry(oldProduct).State = EntityState.Detached;
@@ -111,10 +111,10 @@ namespace riusco_mvc.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ProductDTO>> PostProduct([FromForm] Product product, [FromForm] int userId, [FromForm] string api_key)
+        public async Task<ActionResult<ProductDTO>> PostProduct([FromForm] Product product, [FromForm] int userId, [FromForm] string apiKey)
         {
             var user = await _context.Users.FindAsync(userId);
-            if (user == null || (api_key != _configuration["api_key"] && api_key != user.ApiKey))
+            if (user == null || (apiKey != _configuration["apiKey"] && apiKey != user.ApiKey))
                 return BadRequest();
 
             var newProduct = new ProductDTO(product.Name, product.Description, UploadImage(product.Image), DateTime.Now, true, user.UserID);
@@ -132,14 +132,14 @@ namespace riusco_mvc.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteProduct(int value, [FromForm] string api_key)
+        public async Task<IActionResult> DeleteProduct(int value, [FromForm] string apiKey)
         {
             var product = await _context.Products.FindAsync(value);
             if (product == null)
                 return NotFound();
             
             var user = await _context.Users.FindAsync(product.OwnerID);
-            if (api_key != _configuration["api_key"] && api_key != user.ApiKey)
+            if (apiKey != _configuration["apiKey"] && apiKey != user.ApiKey)
                 return BadRequest();
             
             _context.Products.Remove(product);

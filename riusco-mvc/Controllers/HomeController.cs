@@ -171,7 +171,7 @@ namespace riusco_mvc.Controllers
                         {new StringContent(productId.ToString()), "ProductID"},
                         {new StringContent(ownerId.ToString()), "OwnerID"},
                         {new StringContent(userId.ToString()), "BuyerID"},
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
                     request.Content = multipartContent;
 
@@ -345,7 +345,7 @@ namespace riusco_mvc.Controllers
                 {
                     var multipartContent = new MultipartFormDataContent
                     {
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
                     request.Content = multipartContent;
 
@@ -397,7 +397,7 @@ namespace riusco_mvc.Controllers
                         {new StringContent(Request.Form["email"]), "email"},
                         {new StringContent(Request.Form["city"]), "city"},
                         {new StringContent(Request.Form["password"]), "password"},
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
                     request.Content = multipartContent;
                         
@@ -422,7 +422,7 @@ namespace riusco_mvc.Controllers
                     using var request = new HttpRequestMessage(new HttpMethod("DELETE"), $"{Request.Scheme}://{Request.Host}/Users/DeleteUser/{userId}");
                     var multipartContent = new MultipartFormDataContent
                     {
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
                     request.Content = multipartContent;
                     
@@ -469,7 +469,7 @@ namespace riusco_mvc.Controllers
                 $"{Request.Scheme}://{Request.Host}/Products/DeleteProduct/{value}");
             var multipartContent = new MultipartFormDataContent
             {
-                {new StringContent(_configuration["api_key"]), "api_key"}
+                {new StringContent(_configuration["apiKey"]), "apiKey"}
             };
             request.Content = multipartContent;
 
@@ -514,7 +514,7 @@ namespace riusco_mvc.Controllers
             {
                 {new StringContent(product.Name ?? ""), "name"},
                 {new StringContent(product.Description ?? ""), "description"},
-                {new StringContent(_configuration["api_key"]), "api_key"}
+                {new StringContent(_configuration["apiKey"]), "apiKey"}
             };
 
             var arr = Array.Empty<byte>();
@@ -577,7 +577,7 @@ namespace riusco_mvc.Controllers
                         {new StringContent(product.Name), "name"},
                         {new StringContent(product.Description), "description"},
                         {new StringContent(HttpContext.Session.GetInt32("userId").Value.ToString()), "userId"},
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
 
                     var arr = Array.Empty<byte>();
@@ -613,7 +613,7 @@ namespace riusco_mvc.Controllers
                     using var request = new HttpRequestMessage(new HttpMethod("DELETE"), $"{Request.Scheme}://{Request.Host}/Products/DeleteProduct/{Request.Form["productId"]}");
                     var multipartContent = new MultipartFormDataContent
                     {
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
                     request.Content = multipartContent;
 
@@ -652,7 +652,7 @@ namespace riusco_mvc.Controllers
             using var request = new HttpRequestMessage(new HttpMethod("GET"), $"{Request.Scheme}://{Request.Host}/Transactions/GetTransactionsByUserID/{userId}");
             var multipartContent = new MultipartFormDataContent
             {
-                {new StringContent(_configuration["api_key"]), "api_key"}
+                {new StringContent(_configuration["apiKey"]), "apiKey"}
             };
             request.Content = multipartContent;
 
@@ -673,7 +673,7 @@ namespace riusco_mvc.Controllers
                     using var request2 = new HttpRequestMessage(new HttpMethod("GET"), $"{Request.Scheme}://{Request.Host}/Users/GetUser/{obj.BuyerID}");
                     var multipartContent2 = new MultipartFormDataContent
                     {
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
                     request2.Content = multipartContent2;
 
@@ -689,7 +689,7 @@ namespace riusco_mvc.Controllers
                     using var request2 = new HttpRequestMessage(new HttpMethod("GET"), $"{Request.Scheme}://{Request.Host}/Users/GetUser/{obj.OwnerID}");
                     var multipartContent2 = new MultipartFormDataContent
                     {
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
                     request2.Content = multipartContent2;
 
@@ -733,7 +733,7 @@ namespace riusco_mvc.Controllers
             var multipartContent = new MultipartFormDataContent
             {
                 {new StringContent(button == "close" ? "1" : "2"), "state"},
-                {new StringContent(_configuration["api_key"]), "api_key"}
+                {new StringContent(_configuration["apiKey"]), "apiKey"}
             };
             request.Content = multipartContent;
                         
@@ -785,7 +785,7 @@ namespace riusco_mvc.Controllers
                 $"{Request.Scheme}://{Request.Host}/Users/GetUser/{product.OwnerID}");
             var multipartContent = new MultipartFormDataContent
             {
-                {new StringContent(_configuration["api_key"]), "api_key"}
+                {new StringContent(_configuration["apiKey"]), "apiKey"}
             };
             request2.Content = multipartContent;
             response = httpClient.Send(request2);
@@ -825,7 +825,7 @@ namespace riusco_mvc.Controllers
                     using var request = new HttpRequestMessage(new HttpMethod("DELETE"), $"{Request.Scheme}://{Request.Host}/Products/DeleteProduct/{value}");
                     var multipartContent = new MultipartFormDataContent
                     {
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
                     request.Content = multipartContent;
 
@@ -849,7 +849,7 @@ namespace riusco_mvc.Controllers
                         {new StringContent(value.ToString()), "ProductID"},
                         {new StringContent(Request.Form["ownerId"]), "OwnerID"},
                         {new StringContent(HttpContext.Session.GetInt32("userId").Value.ToString()), "BuyerID"},
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
                     request.Content = multipartContent;
 
@@ -888,7 +888,7 @@ namespace riusco_mvc.Controllers
                 {
                     var multipartContent = new MultipartFormDataContent
                     {
-                        {new StringContent(_configuration["api_key"]), "api_key"}
+                        {new StringContent(_configuration["apiKey"]), "apiKey"}
                     };
                     request.Content = multipartContent;
 

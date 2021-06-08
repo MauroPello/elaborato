@@ -34,31 +34,31 @@ namespace riusco_mvc.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<UserDTO>>> GetUsers([FromForm] string api_key)
+        public async Task<ActionResult<IEnumerable<UserDTO>>> GetUsers([FromForm] string apiKey)
         {
-            if (api_key == _configuration["api_key"])
+            if (apiKey == _configuration["apiKey"])
                 return await _context.Users.ToListAsync();
 
             return BadRequest();
         }
 
         [HttpGet]
-        public async Task<ActionResult<UserDTO>> GetUser(int value, [FromForm] string api_key)
+        public async Task<ActionResult<UserDTO>> GetUser(int value, [FromForm] string apiKey)
         {
             var user = await _context.Users.FindAsync(value);
 
-            if (user == null || (api_key != _configuration["api_key"] && api_key != user.ApiKey))
+            if (user == null || (apiKey != _configuration["apiKey"] && apiKey != user.ApiKey))
                 return NotFound();
 
             return user;
         }
 
         [HttpPut]
-        public async Task<IActionResult> PutUser(int value, [FromForm] User user, [FromForm] string api_key)
+        public async Task<IActionResult> PutUser(int value, [FromForm] User user, [FromForm] string apiKey)
         {
             var oldUser = await _context.Users.FindAsync(value);
-            if (oldUser == null || (api_key != _configuration["api_key"] &&
-                                    api_key != oldUser.ApiKey))
+            if (oldUser == null || (apiKey != _configuration["apiKey"] &&
+                                    apiKey != oldUser.ApiKey))
                 return NotFound();
 
             _context.Entry(oldUser).State = EntityState.Detached;
@@ -94,11 +94,11 @@ namespace riusco_mvc.Controllers
 
         [HttpPut]
         public async Task<IActionResult> UpdatePicture(int value, [FromForm] IFormFile image,
-            [FromForm] string api_key)
+            [FromForm] string apiKey)
         {
             var user = await _context.Users.FindAsync(value);
-            api_key = WebUtility.HtmlDecode(api_key);
-            if (user == null || (api_key != _configuration["api_key"] && api_key != user.ApiKey))
+            apiKey = WebUtility.HtmlDecode(apiKey);
+            if (user == null || (apiKey != _configuration["apiKey"] && apiKey != user.ApiKey))
                 return NotFound();
 
             _context.Entry(user).State = EntityState.Detached;
@@ -145,10 +145,10 @@ namespace riusco_mvc.Controllers
         }
 
         [HttpDelete]
-        public async Task<IActionResult> DeleteUser(int value, [FromForm] string api_key)
+        public async Task<IActionResult> DeleteUser(int value, [FromForm] string apiKey)
         {
             var user = await _context.Users.FindAsync(value);
-            if (user == null || (api_key != _configuration["api_key"] && api_key != user.ApiKey))
+            if (user == null || (apiKey != _configuration["apiKey"] && apiKey != user.ApiKey))
                 return NotFound();
             
             _context.Users.Remove(user);

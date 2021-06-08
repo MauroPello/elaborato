@@ -7,19 +7,21 @@
     <div class="product-header">
         <div class="product-image"><img src="/images/products/@Model.Product.Image" alt="product-image"/></div>
         <div class="product-info">
-            <div style="display: flex; flex-direction: row; justify-content: space-between;">
-                <h7 style="color: dimgrey;">@Model.Product.LastUpdate</h7>
-                <h7 style="color: dimgrey;">ID: @Model.Product.ProductID</h7>
-            </div>
-            <h4><b>@Model.Product.Name</b></h4>
-            <div style="display: flex; justify-content: space-between">
-                <div style="display: flex; align-items: baseline;">
-                    <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: .5rem;"></i>
-                    <h7>@Model.Owner.City</h7>
+            <div style="display: flex; flex-direction: column;">
+                <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                    <h7 style="color: dimgrey;">@Model.Product.LastUpdate</h7>
+                    <h7 style="color: dimgrey;">ID: @Model.Product.ProductID</h7>
                 </div>
-                <div style="display: flex; align-items: center;">
-                    <h4 style="margin: 0 .5rem auto 0; font-weight: bold;">1</h4>
-                    <img src="/images/green_coin.png" alt="green-coin" width="25px" height="25px"/>
+                <h4><b>@Model.Product.Name</b></h4>
+                <div style="display: flex; justify-content: space-between">
+                    <div style="display: flex; align-items: baseline;">
+                        <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: .5rem;"></i>
+                        <h7>@Model.Owner.City</h7>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <h4 style="margin: 0 .5rem auto 0; font-weight: bold;">1</h4>
+                        <img src="/images/green_coin.png" alt="green-coin" width="25px" height="25px"/>
+                    </div>
                 </div>
             </div>
             @if (Model.Product.IsAvailable)
@@ -37,17 +39,21 @@
                         else
                         {
                             <form method="post">
-                                <input type="hidden" name="ownerId" value="@Model.Owner.UserID" />
+                                <input type="hidden" name="ownerId" value="@Model.Owner.UserID"/>
                                 <button type="submit" name="button" value="buy" style="padding: .2rem .5rem;" class="btn btn-primary">Buy Now</button>
                             </form>
                         }
                     }
                 </div>
             }
-            <a href="/Home/User/@Model.Owner.UserID" style="color: black; text-decoration: none;" target="_blank"><div class="product-seller">
-                <img src="/images/users/@Model.Owner.Image" alt="user-image"/>
-                <h6 style="align-self: center;">@Model.Owner.Name</h6>
-            </div></a>
+            <div style="display: flex">
+                <a href="/Home/User/@Model.Owner.UserID" style="color: black; text-decoration: none;" target="_blank">
+                    <div class="product-seller">
+                        <img src="/images/users/@Model.Owner.Image" alt="user-image"/>
+                        <h6 style="align-self: center;">@Model.Owner.Name</h6>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
     <div class="product-description">
@@ -55,3 +61,14 @@
         <h5>@Model.Product.Description</h5>
     </div>
 </div>
+
+@section Scripts{
+<script>
+    window.onload = function () {
+        document.getElementsByClassName("product-info")[0].style.height = ((document.getElementsByClassName("product-image")[0].clientHeight * 100 / document.documentElement.clientHeight) - 15) + "vh";
+    }
+    window.addEventListener("resize", function () {
+        document.getElementsByClassName("product-info")[0].style.height = ((document.getElementsByClassName("product-image")[0].clientHeight * 100 / document.documentElement.clientHeight) - 15) + "vh";
+    });
+</script>
+}

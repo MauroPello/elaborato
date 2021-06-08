@@ -61,7 +61,7 @@
 
     using var httpClient = new HttpClient(handler);
     using var request = new HttpRequestMessage(new HttpMethod("GET"), $"{NavigationManager.BaseUri}Users/GetUsers/");
-    var multipartContent = new MultipartFormDataContent {{new StringContent(Configuration["api_key"]), "api_key"}};
+    var multipartContent = new MultipartFormDataContent {{new StringContent(Configuration["apiKey"]), "apiKey"}};
     request.Content = multipartContent;
 
     var response = httpClient.Send(request);

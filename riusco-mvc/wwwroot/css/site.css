@@ -1,4 +1,12 @@
-﻿.form-home {
+﻿.nav-link {
+  font-size: 1.25rem;
+}
+
+.btn {
+  font-size: 1.25rem;
+}
+
+.form-home {
   width: min(90%, 2000px);
 }
 
@@ -91,7 +99,8 @@
   --omrs-color-bg-low-contrast: rgba(239, 241, 242, 0);
   --omrs-color-ink-high-contrast: #121212;
   --omrs-color-bg-high-contrast: rgba(255, 255, 255, 0);
-  --omrs-text-size: .9375rem;
+  /*--omrs-text-size: .9375rem;*/
+  --omrs-text-size: 1.25rem;
 }
 
 div.omrs-input-group {
@@ -112,13 +121,16 @@ div.omrs-input-group {
   border: none;
   border-bottom: 0.125rem solid var(--omrs-color-ink-medium-contrast);
   width: 100%;
-  height: 3.25rem;
-  min-height: 3.25rem;
+  /*height: 3.25rem;*/
+  /*min-height: 3.25rem;*/
+  height: 4rem;
+  min-height: 4rem;
   font-size: var(--omrs-text-size);
   padding-left: 0.875rem;
   line-height: 147.6%;
   padding-top: 0.825rem;
-  padding-bottom: 0.5rem;
+  /*padding-bottom: 0.5rem;*/
+  padding-bottom: 0;
 }
 
 .omrs-input-label {
@@ -310,12 +322,12 @@ div.omrs-input-group {
 }
 
 .product-info {
-  height: auto; 
-  margin: 5vh 0 5vh 2vw; 
+  margin: 6vh 0 6vh 2vw; 
   width: 100%;
   max-width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .product-image {
