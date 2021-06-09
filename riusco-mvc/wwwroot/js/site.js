@@ -3,6 +3,14 @@
     this.style.height = (this.scrollHeight) + 'px';
 });
 
+function enterSearch () {
+    window.addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            $("#search_button").click();
+        }
+    });
+}
+
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
     var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),

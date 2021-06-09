@@ -1,12 +1,14 @@
+@using Microsoft.JSInterop
+@inject IJSRuntime _jsRuntime
 <div style="display: flex; align-items: center; justify-content: center; margin: 2vh 2vw">
   <div class="omrs-input-group">
     <label class="omrs-input-underlined">
-      <input type="text" @bind="@query" placeholder=" " required>
+      <input type="text" @bind="@query" placeholder=" " id="search_input" required>
       <span class="omrs-input-label">Search</span>
       <span class="omrs-input-helper">Enter keywords</span>
     </label>
   </div>
-  <button class="btn btn-primary" style="padding: .2rem .4rem; margin-left: 1rem; margin-bottom: 3rem;" @onclick="(e => UpdateProducts())" >Search</button>
+  <button class="btn btn-primary" style="padding: .2rem .4rem; margin-left: 1rem; margin-bottom: 3rem;" @onclick="(e => UpdateProducts())" id="search_button" >Search</button>
 </div>
 @if (products.Count == 0)
 {
@@ -48,7 +50,7 @@
             </div>
             <div class="card-body">
               <div style="max-width: 100%">
-                <p class="card-text" style="overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">Description: @selectedProduct.Description</p>
+                <p class="card-text" style="font-size: 1.1rem; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;">Description: @selectedProduct.Description</p>
               </div>
             </div>
               <div class="card-footer" style="display: inherit">
@@ -83,6 +85,14 @@
   ProductDTO selectedProduct = new ProductDTO();
   List<ProductDTO> products = new List<ProductDTO>();
   protected string query {get; set;}
+  
+  protected async override Task OnAfterRenderAsync(bool firstRender)
+  {
+    if (firstRender)
+    {
+      await _jsRuntime.InvokeVoidAsync("enterSearch");
+    }
+  }
   
   protected override Task OnInitializedAsync()
   {

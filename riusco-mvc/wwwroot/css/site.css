@@ -1,5 +1,5 @@
 ﻿.nav-link {
-  font-size: 1.25rem;
+  font-size: var(--navbar-font-size);
 }
 
 .btn {
@@ -101,6 +101,7 @@
   --omrs-color-bg-high-contrast: rgba(255, 255, 255, 0);
   /*--omrs-text-size: .9375rem;*/
   --omrs-text-size: 1.25rem;
+  --navbar-font-size: 1.25rem;
 }
 
 div.omrs-input-group {
@@ -131,6 +132,11 @@ div.omrs-input-group {
   padding-top: 0.825rem;
   /*padding-bottom: 0.5rem;*/
   padding-bottom: 0;
+}
+
+.omrs-input-underlined > textarea,
+.omrs-input-filled > textarea {
+  padding-top: 1.5rem!important;
 }
 
 .omrs-input-label {
@@ -199,48 +205,9 @@ div.omrs-input-group {
   margin-bottom: 32px;
 }
 
-.omrs-input-underlined > input:user-invalid ~ svg,
-.omrs-input-underlined > textarea:user-invalid ~ svg,
-.omrs-input-filled > textarea:user-invalid ~ svg, 
-.omrs-input-filled > input:user-invalid ~ svg {
-  fill: var(--omrs-color-danger)!important;
-}
-
-.omrs-input-filled > textarea:user-invalid + .omrs-input-label,
-.omrs-input-underlined > textarea:user-invalid + .omrs-input-label,
-.omrs-input-filled > textarea:user-invalid ~ .omrs-input-helper,
-.omrs-input-underlined > textarea:user-invalid ~ .omrs-input-helper, 
-.omrs-input-filled > input:user-invalid + .omrs-input-label,
-.omrs-input-underlined > input:user-invalid + .omrs-input-label,
-.omrs-input-filled > input:user-invalid ~ .omrs-input-helper, 
-.omrs-input-underlined > input:user-invalid ~ .omrs-input-helper {
-  color: var(--omrs-color-danger)!important;
-}
-
-.omrs-input-underlined > input:user-invalid,
-.omrs-input-underlined > textarea:user-invalid,
-.omrs-input-filled > textarea:user-invalid,
-.omrs-input-filled > input:user-invalid {
-  border-color: var(--omrs-color-danger)!important;
-}
-
-.omrs-input-underlined:not(.omrs-input-danger) > input:focus + .omrs-input-label,
-.omrs-input-underlined:not(.omrs-input-danger) > textarea:focus + .omrs-input-label,
-.omrs-input-filled:not(.omrs-input-danger) > textarea:focus + .omrs-input-label, 
-.omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label {
-  color: var(--omrs-color-interaction);
-}
-
-.omrs-input-underlined:not(.omrs-input-danger) > input:focus,
-.omrs-input-underlined:not(.omrs-input-danger) > textarea:focus,
-.omrs-input-filled:not(.omrs-input-danger) > textarea:focus, 
-.omrs-input-filled:not(.omrs-input-danger) > input:focus {
-  border-color: var(--omrs-color-interaction);
-}
-
 .omrs-input-underlined:not(.omrs-input-danger) > input:focus ~ svg,
 .omrs-input-underlined:not(.omrs-input-danger) > textarea:focus ~ svg,
-.omrs-input-filled:not(.omrs-input-danger) > textarea:focus ~ svg, 
+.omrs-input-filled:not(.omrs-input-danger) > textarea:focus ~ svg,
 .omrs-input-filled:not(.omrs-input-danger) > input:focus ~ svg {
   fill: var(--omrs-color-ink-high-contrast);
 }
@@ -252,6 +219,62 @@ div.omrs-input-group {
 .omrs-input-filled > textarea,
 .omrs-input-filled > input {
   background: var(--omrs-color-bg-low-contrast);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus + .omrs-input-label,
+.omrs-input-underlined:not(.omrs-input-danger) > textarea:focus + .omrs-input-label,
+.omrs-input-filled:not(.omrs-input-danger) > textarea:focus + .omrs-input-label,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus + .omrs-input-label {
+  color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined:not(.omrs-input-danger) > input:focus,
+.omrs-input-underlined:not(.omrs-input-danger) > textarea:focus,
+.omrs-input-filled:not(.omrs-input-danger) > textarea:focus,
+.omrs-input-filled:not(.omrs-input-danger) > input:focus {
+  border-color: var(--omrs-color-interaction);
+}
+
+.omrs-input-underlined > input[id="search_input"]:user-invalid ~ svg,
+.omrs-input-filled > input[id="search_input"]:user-invalid ~ svg {
+  fill: var(--omrs-color-ink-medium-contrast)!important;
+}
+
+.omrs-input-underlined > input[id="search_input"]:user-invalid + .omrs-input-label,
+.omrs-input-filled > input[id="search_input"]:user-invalid + .omrs-input-label,
+.omrs-input-underlined > input[id="search_input"]:user-invalid ~ .omrs-input-helper,
+.omrs-input-filled > input[id="search_input"]:user-invalid ~ .omrs-input-helper {
+  color: var(--omrs-color-ink-medium-contrast)!important;
+}
+
+.omrs-input-underlined > input[id="search_input"]:user-invalid,
+.omrs-input-filled > input[id="search_input"]:user-invalid {
+  border-color: var(--omrs-color-ink-medium-contrast)!important;
+}
+
+.omrs-input-underlined > input:user-invalid ~ svg,
+.omrs-input-underlined > textarea:user-invalid ~ svg,
+.omrs-input-filled > textarea:user-invalid ~ svg,
+.omrs-input-filled > input:user-invalid ~ svg {
+  fill: var(--omrs-color-danger)!important;
+}
+
+.omrs-input-filled > textarea:user-invalid + .omrs-input-label,
+.omrs-input-underlined > textarea:user-invalid + .omrs-input-label,
+.omrs-input-filled > textarea:user-invalid ~ .omrs-input-helper,
+.omrs-input-underlined > textarea:user-invalid ~ .omrs-input-helper,
+.omrs-input-filled > input:user-invalid + .omrs-input-label,
+.omrs-input-underlined > input:user-invalid + .omrs-input-label,
+.omrs-input-filled > input:user-invalid ~ .omrs-input-helper,
+.omrs-input-underlined > input:user-invalid ~ .omrs-input-helper {
+  color: var(--omrs-color-danger)!important;
+}
+
+.omrs-input-underlined > input:user-invalid,
+.omrs-input-underlined > textarea:user-invalid,
+.omrs-input-filled > textarea:user-invalid,
+.omrs-input-filled > input:user-invalid {
+  border-color: var(--omrs-color-danger)!important;
 }
 
 @media screen and (max-width: 1000px) {
@@ -413,7 +436,7 @@ div.omrs-input-group {
 }
 
 .modal .card-img {
-  height: 500px;
+  height: min(500px, 50vh);
   vertical-align: bottom;
   background-position: center;
   background-repeat: no-repeat;
