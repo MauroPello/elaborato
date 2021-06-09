@@ -1,15 +1,7 @@
 ﻿$('textarea').on('input', function () {
     this.style.height = 'auto';
-    this.style.height = (this.scrollHeight) + 'px';
+    this.style.height = (this.scrollHeight + 10) + 'px';
 });
-
-function enterSearch () {
-    window.addEventListener('keyup', function(event) {
-        if (event.key === 'Enter') {
-            $("#search_button").click();
-        }
-    });
-}
 
 function getParameterByName(name, url = window.location.href) {
     name = name.replace(/[\[\]]/g, '\\$&');
