@@ -52,8 +52,12 @@ namespace riusco_mvc.Controllers
             {
                 foreach (var keyword in keywords)
                 {
-                    if (product.Name.Contains(keyword, StringComparison.InvariantCultureIgnoreCase) || product.Description.Contains(keyword, StringComparison.InvariantCultureIgnoreCase))
+                    if (product.Name.Contains(keyword, StringComparison.InvariantCultureIgnoreCase) ||
+                        product.Description.Contains(keyword, StringComparison.InvariantCultureIgnoreCase))
+                    {
                         output.Add(product);
+                        break;
+                    }
                 }
             }
 
