@@ -89,7 +89,7 @@ namespace riusco_mvc.Controllers
                 return BadRequest();
             }
 
-            return NoContent();
+            return Ok();
         }
 
         [HttpPut]
@@ -117,7 +117,7 @@ namespace riusco_mvc.Controllers
                 return BadRequest();
             }
 
-            return NoContent();
+            return Ok();
         }
         
         [HttpPost]
@@ -131,7 +131,8 @@ namespace riusco_mvc.Controllers
             var rng = new RNGCryptoServiceProvider();
             rng.GetBytes(salt);
             rng.GetBytes(apiKey);
-            var user = new UserDTO(userViewModel.Name, GetHash(userViewModel.Password, Convert.ToBase64String(salt)), userViewModel.Email, UploadImage(userViewModel.Image), Convert.ToBase64String(salt), Convert.ToBase64String(apiKey), 1, userViewModel.City);
+            var image = UploadImage(userViewModel.Image);
+            var user = new UserDTO(userViewModel.Name, GetHash(userViewModel.Password, Convert.ToBase64String(salt)), userViewModel.Email, image, Convert.ToBase64String(salt), Convert.ToBase64String(apiKey), 1, userViewModel.City);
             try
             {
                 await _context.Users.AddAsync(user);
@@ -139,6 +140,7 @@ namespace riusco_mvc.Controllers
             }
             catch (DbUpdateException)
             {
+                DeleteImage(image);
                 return BadRequest();
             }
             return CreatedAtAction("GetUser", new { name = user.Name }, user);
@@ -156,7 +158,7 @@ namespace riusco_mvc.Controllers
 
             DeleteImage(user.Image);
             
-            return NoContent();
+            return Ok();
         }
 
         [HttpGet]
@@ -188,10 +190,10 @@ namespace riusco_mvc.Controllers
             using var fileImage = Image.Load(image.OpenReadStream());
             var height = fileImage.Height;
             var width = fileImage.Width;
-            if (height > 1080)
-                fileImage.Mutate(x => x.Resize(0, 1080));
-            if (width > 3840)
-                fileImage.Mutate(x => x.Resize(3840, 0));
+            if (height > 2000)
+                fileImage.Mutate(x => x.Resize(0, 2000));
+            if (width > 2000)
+                fileImage.Mutate(x => x.Resize(2000, 0));
             if (height > width)
                 fileImage.Mutate(x => x.Crop(new Rectangle((width - width) / 2, (height - width) / 2, width,width)));
             else

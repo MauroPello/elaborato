@@ -101,14 +101,13 @@ namespace riusco_mvc.Controllers
                 return BadRequest();
             }
 
+            if (state == "Completed")
+                product.OwnerID = buyer.UserID;
             _context.Entry(product).State = EntityState.Detached;
             product.IsAvailable = state == "Closed";
             product.LastUpdate = DateTime.Now;
-            if (state == "Completed")
-            {
-                product.OwnerID = buyer.UserID;
-            }
             _context.Entry(product).State = EntityState.Modified;
+
             try
             {
                 await _context.SaveChangesAsync();
@@ -152,7 +151,7 @@ namespace riusco_mvc.Controllers
                 }
             }
 
-            return NoContent();
+            return Ok();
         }
 
         [HttpPost]

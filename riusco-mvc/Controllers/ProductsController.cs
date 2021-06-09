@@ -107,7 +107,7 @@ namespace riusco_mvc.Controllers
                 return BadRequest();
             }
 
-            return NoContent();
+            return Ok();
         }
 
         [HttpPost]
@@ -147,7 +147,7 @@ namespace riusco_mvc.Controllers
 
             DeleteImage(product.Image);
 
-            return NoContent();
+            return Ok();
         }
 
         
@@ -159,10 +159,10 @@ namespace riusco_mvc.Controllers
                 return "default_product_picture.png";
 
             using var fileImage = Image.Load(image.OpenReadStream());
-            if (fileImage.Height > 1080)
-                fileImage.Mutate(x => x.Resize(0, 1080));
-            if (fileImage.Width > 3840)
-                fileImage.Mutate(x => x.Resize(3840, 0));
+            if (fileImage.Height > 2000)
+                fileImage.Mutate(x => x.Resize(0, 2000));
+            if (fileImage.Width > 2000)
+                fileImage.Mutate(x => x.Resize(2000, 0));
                         
             fileImage.Save(Path.Combine(_environment.WebRootPath, "images", "products", imageName));
 

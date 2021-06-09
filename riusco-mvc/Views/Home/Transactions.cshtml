@@ -11,28 +11,28 @@ if (transaction != null)
     <div class="transaction-container">
         <div class="transaction-info-container">
             <a href="/Home/Product/@transaction.Product.ProductID" style="color: black; text-decoration: none;" target="_blank"><div style="display: flex; align-items: center;">
-                <img src="/images/products/@transaction.Product.Image" style="width: 5rem; height: 5rem; border-radius: 5rem"/>
-                <div style="display: flex; flex-direction: column; align-items: center; margin-left: 1rem;">
+                <div style="background-image: url('/images/products/@transaction.Product.Image');" class="transaction-product-img"></div>
+                <div style="display: flex; flex-direction: column; align-items: center; margin-left: 1rem; text-align: center;">
                     <span>Product</span>
                     <b>@transaction.Product.Name</b>
                 </div>
             </div></a>
             <a href="/Home/User/@transaction.Seller.UserID" style="color: black; text-decoration: none;" target="_blank"><div style="display: flex; align-items: center;">
                 <img src="/images/users/@transaction.Seller.Image" style="width: 5rem; height: 5rem; border-radius: 5rem"/>
-                <div style="display: flex; flex-direction: column; align-items: center; margin-left: 1rem;">
+                <div style="display: flex; flex-direction: column; align-items: center; margin-left: 1rem; text-align: center;">
                     <span>Seller</span>
                     <b>@Html.Raw(owner ? "You" : transaction.Seller.Name)</b>
                 </div>
             </div></a>
             <a href="/Home/User/@transaction.Buyer.UserID" style="color: black; text-decoration: none;" target="_blank"><div style="display: flex; align-items: center;">
                 <img src="/images/users/@transaction.Buyer.Image" style="width: 5rem; height: 5rem; border-radius: 5rem"/>
-                <div style="display: flex; flex-direction: column; align-items: center; margin-left: 1rem;">
+                <div style="display: flex; flex-direction: column; align-items: center; margin-left: 1rem; text-align: center;">
                     <span>Buyer</span>
                     <b>@Html.Raw(owner ? transaction.Buyer.Name : "You")</b>
                 </div>
             </div></a>
             <div style="display: flex; align-items: center;">
-                <div style="display: flex; flex-direction: column; align-items: center;">
+                <div style="display: flex; flex-direction: column; align-items: center; text-align: center;">
                     <span>State</span>
                     <b style="color: @Html.Raw(transaction.State == "Completed" ? "green" : (transaction.State == "Closed" ? "red" : "black"))">@transaction.State</b>
                     <b>@transaction.LastUpdate.ToString(System.Globalization.CultureInfo.CurrentCulture)</b>
@@ -64,5 +64,15 @@ if (transaction != null)
 <style>
     .btn {
         font-size: 1rem!important;
+    }
+    
+    .transaction-product-img {
+      width: 5rem; 
+      height: 5rem; 
+      border-radius: 5rem;
+      vertical-align: bottom;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 </style>

@@ -1,5 +1,17 @@
+@using riusco_mvc.Models
+@using System.IO
+@using System.Net.Http
+@using System.Text.Json
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@inject NavigationManager NavigationManager
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
 @using Microsoft.JSInterop
 @inject IJSRuntime _jsRuntime
+
 <div style="display: flex; align-items: center; justify-content: center; margin: 2vh 2vw">
   <div class="omrs-input-group">
     <label class="omrs-input-underlined">
